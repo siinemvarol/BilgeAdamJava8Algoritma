@@ -1,0 +1,18 @@
+package lesson001;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		//verilen ürünün satış fiyatının içinde %18 ve %15 kar olduğunu biliyoruz
+		//verilen ürünün ham fiyatını bulan program
+		
+		int satisFiyati = 200;
+		double kdv = 0.18;
+		double kar = 0.15;
+		double hamFiyati = satisFiyati - (satisFiyati * kdv) - (satisFiyati * kar);
+		
+		System.out.println("Ürünün ham fiyatı: " + hamFiyati);
+
+	}
+
+}

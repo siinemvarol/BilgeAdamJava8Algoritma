@@ -1,0 +1,33 @@
+package lesson001;
+
+import java.util.Scanner;
+
+public class Question6 {
+
+	public static void main(String[] args) {
+		// kullanıcıdan alınan vize ve final notlarını hesaplayarak geçip geçmediğini hesaplayan program
+		
+		//vize %40
+		//final %60
+		//50ye büyük ve eşitse geçer, 50'den küçükse kalır
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.println("Vize notunu girin: ");
+		int vizeNotu = scanner.nextInt();
+		
+		System.out.println("Final notunu girin: ");
+		int finalNotu = scanner.nextInt();
+		
+		double ortalamaNot = (vizeNotu*0.4) + (finalNotu*0.6);
+		
+		if (ortalamaNot >= 50) {
+			System.out.println("Tebrikler, " + ortalamaNot + " ortalamayla geçtiniz.");
+		}
+		else System.out.println("Maalesef geçer not alamadınız. Notunuz: " +ortalamaNot);
+				
+			
+
+	}
+
+}

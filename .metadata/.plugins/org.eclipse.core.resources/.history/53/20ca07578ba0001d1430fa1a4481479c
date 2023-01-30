@@ -1,0 +1,14 @@
+package lesson001;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		
+		//javada primitive tipler nelerdir
+		//birbirinden farkı nedelerdir?
+		
+		//verilen isim ve soy isim değerlerini hello isim soyisim şeklinde yazdıralım
+		
+		System.out.println("Hello sinem varol!");
+	}
+}
