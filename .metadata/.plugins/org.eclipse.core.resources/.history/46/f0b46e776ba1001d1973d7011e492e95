@@ -1,0 +1,12 @@
+package lesson002;
+
+public class Question18 {
+
+	public static void main(String[] args) {
+		// Girilen char değeri alfabenin içinde var mı yok mu kontrol edelim
+		// a-z arası ve A-Z arası alfabede. 1 2 3 /& . - karakterleri alfabede değil
+		
+
+	}
+
+}

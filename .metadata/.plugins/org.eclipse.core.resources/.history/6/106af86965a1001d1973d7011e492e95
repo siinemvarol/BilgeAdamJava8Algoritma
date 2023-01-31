@@ -1,0 +1,20 @@
+package lesson002;
+
+import java.util.Scanner;
+
+public class Question16 {
+
+	public static void main(String[] args) {
+		// Kullanıcıdan aldığımız sayı haftanın hangi gününe denk geliyor
+		// aldığımız gün hafta sonu mu hafta içi mi kontrol edelim
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Bir sayı girin: ");
+		int sayi = scanner.nextInt();
+		
+		
+
+	}
+
+}

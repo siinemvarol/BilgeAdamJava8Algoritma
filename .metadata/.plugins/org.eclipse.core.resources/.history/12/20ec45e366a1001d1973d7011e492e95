@@ -1,0 +1,54 @@
+package lesson002;
+
+import java.util.Scanner;
+
+public class Question16 {
+
+	public static void main(String[] args) {
+		// Kullanıcıdan aldığımız sayı haftanın hangi gününe denk geliyor
+		// aldığımız gün hafta sonu mu hafta içi mi kontrol edelim
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Bir sayı girin: ");
+		int sayi = scanner.nextInt();
+		
+		switch (sayi%7) {
+		case 1:
+			System.out.println("Pazartesi");
+			System.out.println("Hafta içi");
+			break;
+		case 2:
+			System.out.println("Salı");
+			System.out.println("Hafta içi");
+			break;
+		case 3:
+			System.out.println("Çarşamba");
+			System.out.println("Hafta içi");
+			break;
+		case 4:
+			System.out.println("Perşembe");
+			System.out.println("Hafta içi");
+			break;
+		case 5:
+			System.out.println("Cuma");
+			System.out.println("Hafta içi");
+			break;
+		case 6:
+			System.out.println("Cumartesi");
+			System.out.println("Hafta sonu");
+			break;
+		case 0:
+			System.out.println("Pazar");
+			System.out.println("Hafta sonu");
+			break;
+
+		default:
+			System.out.println("koşullarda hata var");
+			break;
+		}
+			
+
+	}
+
+}
