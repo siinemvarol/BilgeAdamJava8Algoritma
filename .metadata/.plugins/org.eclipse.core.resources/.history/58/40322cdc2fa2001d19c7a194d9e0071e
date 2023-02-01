@@ -1,0 +1,29 @@
+package lesson003;
+
+import java.util.Scanner;
+
+public class Question28 {
+
+	public static void main(String[] args) {
+		// Girilen sayının 5in kuvveti olup olmadığını bulan program
+		
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter a number: ");
+		int number = scanner.nextInt();
+		
+		for (int i=5; i < number; i*=5) {
+			if (number%5 == 0) {
+				number = number / i;
+				System.out.println(number + "5'in kuvveti değildir");
+			}
+			else {
+				System.out.println(number + " 5'in kuvvetidir");
+				break;
+			}
+			
+		}
+
+	}
+
+}

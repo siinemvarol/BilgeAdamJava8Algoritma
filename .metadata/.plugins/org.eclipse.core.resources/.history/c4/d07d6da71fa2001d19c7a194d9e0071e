@@ -1,0 +1,20 @@
+package leeson003;
+
+import java.util.Scanner;
+
+public class Question22 {
+
+	public static void main(String[] args) {
+		// Girilen sayı için çarpım tablosunu veren programı yazalım
+		
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+		
+		for (int i = 1; i <= 10; i++ ) {
+			int multiplication = number * i;
+			System.out.println(number + " x " + i + " = " + multiplication);
+		}
+
+	}
+
+}

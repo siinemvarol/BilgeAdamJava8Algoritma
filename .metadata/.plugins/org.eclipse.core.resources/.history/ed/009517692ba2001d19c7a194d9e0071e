@@ -1,0 +1,29 @@
+package lesson003;
+
+import java.util.Scanner;
+
+public class Question27 {
+
+	public static void main(String[] args) {
+		// Girilen sayının basamaklarının toplamını bulalım. do while ile yapalım
+		// 127 --> 1 + 2 + 7 = 10
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter a number: ");
+		int number = scanner.nextInt();
+		
+		int basamak = 0;
+		int kalan = 0;
+	//	int bolum = 10;
+		
+		do {
+			kalan = number%10;
+			basamak = basamak + kalan; 
+		} while (number%10 > 0);
+
+		System.out.println(basamak);
+	}
+	
+
+}
