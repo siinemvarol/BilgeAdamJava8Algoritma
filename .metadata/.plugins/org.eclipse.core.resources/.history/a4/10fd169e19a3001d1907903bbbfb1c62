@@ -1,0 +1,68 @@
+package lesson004;
+
+import java.util.Scanner;
+
+public class Question38 {
+
+	public static void main(String[] args) {
+		//  Menu 
+		//  1-Dışarıdan bir kelime ve bir harf girilsin  eğer kelimemizin için de o 
+		//  harf varsa kaç tane olduğunu ve index numaralarını yazdırın.
+		//  eğer harfi içermiyorsa bir çıktı aradağınız harf yok gibi
+		
+		//  2-Dışarıdan bir kelime giriniz daha sonra değiştirmek istediğiniz harfi
+		//          giriniz daha sonra hangi harfle değiştireceğinizi giriniz Eğer kelimemiz
+		//          içerisinde o harf varsa değiştirsin.
+		
+		//  3-Dışarıdan Girilen bir kelimeyi ters çevirip yazdıralım.Polindrom olup
+		//         * olmadığını bulunuz(kek,iki,kabak,kayak)
+		// 4 - programdan çıksın
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("   --- String Calculator ---   ");
+		System.out.println("1 - A counter for calculating how many times a letter comes up in a text");
+		System.out.println("2 - I want to change letters in a text");
+		System.out.println("3 - Polindrome check");
+		System.out.println("4 - Exit");
+		
+		int number = scanner.nextInt();
+		
+		switch (number) {
+		case 1:
+			int sayac = 0;
+			String indexler = "";
+			System.out.println("Please enter a text.");
+			String kelime = scanner.nextLine();
+			scanner.nextLine();
+			System.out.println("Please enter a letter.");
+			String harf = scanner.nextLine();
+			
+			if(!kelime.contains(harf)) {
+				System.out.println("Aradığınız harf kelime içinde yoktur");
+			}
+			
+			for (int i = 0; i<kelime.length(); i++) {
+				if(kelime.charAt(i)== harf.charAt(0)) {
+					sayac ++;
+					indexler += i + ",";
+				}
+			}
+			System.out.println("Letter " + harf + " comes up " + sayac + " times in text.");			
+			
+			break;
+		case 2:
+			
+			break;
+		case 3:
+			
+			break;
+
+		default:
+			System.out.println("You didn't enter validate numbers");
+			break;			
+		}
+		System.out.println("Thank you for playing the game!");
+	}
+
+
+}

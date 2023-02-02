@@ -1,0 +1,36 @@
+package lesson004;
+
+import java.util.Scanner;
+
+public class Question37 {
+
+	public static void main(String[] args) {
+		// kullanıcıdan email password repassword alalım
+		// emailde '@hotmail.com' ya da '@outlook.com'yoksa: email formarına uygun değil
+		// uygunsa password repassword karşılaştır, aynı değilse passwordler uyuşmyor
+		// password min 8 karakter olsun
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String emailAccepted;
+		String password = "";
+		
+		
+		do {
+			System.out.println("Kaydolmak için eposta adresi girin: ");
+			String email = scanner.nextLine();
+			emailAccepted = email;
+		} while (emailAccepted.contains("@hotmail.com") || emailAccepted.contains("@outlook.com"));{
+			System.out.println("Eposta adresi kabul edildi");
+		}
+		
+		do {
+			System.out.println("Şifrenizi girin: ");
+			String password = scanner.nextLine();
+		} while (password.charAt(7)!= null);{
+			
+		}
+
+	}
+
+}

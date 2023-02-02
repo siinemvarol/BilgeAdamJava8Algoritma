@@ -1,0 +1,31 @@
+package lesson004;
+
+public class Question35 {
+
+	public static void main(String[] args) {
+		// Java,Spring,Postgre,React
+		
+		//her virgülden kelimeyi ayırmak istiyorum
+		
+		String text = "Java,Spring,Postgre,React";
+		String [] seperated = text.split(",");
+		
+		for(int i = 0; i< seperated.length; i++) {
+			System.out.println(seperated[i]);
+		}
+		
+		//Alternatif - substring
+		String s1 =text.substring(0, 4);
+		String s2 =text.substring(5, 11);
+		String s3 =text.substring(12, 19);
+		
+		
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+		
+	}
+
+}
