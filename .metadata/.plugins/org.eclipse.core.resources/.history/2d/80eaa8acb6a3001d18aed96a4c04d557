@@ -1,0 +1,15 @@
+package lesson005;
+
+public class Question39 {
+
+	public static void main(String[] args) {
+		
+		// Random int sayı üretmeliyiz
+		// Random sayı üretelim 0-100 arasında bunu ekrana yazdıralım
+		
+		int i = (int) Math.random();
+		System.out.println(i);
+
+	}
+
+}

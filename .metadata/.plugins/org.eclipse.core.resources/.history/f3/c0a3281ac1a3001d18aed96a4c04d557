@@ -1,0 +1,34 @@
+package lesson005;
+
+public class Question40 {
+
+	public static void main(String[] args) {
+		// A ile biten kelimelerin yerine ? koyacağız
+		// 0 index değişti diyelim -->> yeni değeri -> ?
+		
+		//s
+		
+		
+		String[] dizi = {"Amerika", "Almanya", "İsveç", "Türkiye", "Danimarka"};
+		
+		for(int i = 0; i <dizi.length; i++) {
+			if(dizi[i].endsWith("a")) {
+				dizi[i] = "?";
+				String yeniDeger = dizi[i];
+				System.out.println(i + ". indexi değişti. " + yeniDeger + " ile değişti.");
+			}
+		}
+			
+			
+			
+		}
+
+//		for(int i = 0; i <dizi.length; i++) {
+//			for (int j = 0; j < dizi[i].length(); j++) {
+//				if (dizi[i].charAt(j) == 'a' || dizi[i].charAt(j) == 'A') {
+//					dizi[i].charAt(j).replace
+//				}
+//			}
+//		}
+
+}

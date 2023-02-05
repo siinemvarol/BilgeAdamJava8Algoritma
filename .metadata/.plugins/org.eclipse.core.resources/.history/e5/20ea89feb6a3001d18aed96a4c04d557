@@ -1,0 +1,20 @@
+package lesson005;
+
+public class Question39 {
+
+	public static void main(String[] args) {
+		
+		// Random int sayı üretmeliyiz
+		// Random sayı üretelim 0-100 arasında bunu ekrana yazdıralım
+		
+		int i = (int) Math.random();
+		System.out.println(i);
+		int min = 0;
+		int max = 100;
+		
+		int j = (int) Math.floor(Math.random() *(max - min + 1) + min);
+		System.out.println(j);
+
+	}
+
+}

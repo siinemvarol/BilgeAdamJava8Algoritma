@@ -1,0 +1,18 @@
+package lesson005;
+
+public class HW001 {
+
+	public static void main(String[] args) {
+		// 1
+		// Question 43 için: hangi sayıları saydrmak istiyorsak kullanıcıdan alalım
+		
+		// 2
+		// Bir dizide en büyük ikinci sayıyı bulan program
+		
+		//3
+		// Bir dizide eğer 13 var is hem 13'ü hem de bir sonraki indexi toplama işlemine almayacak
+		// Dizideki elemanların toplamını verecek
+
+	}
+
+}
