@@ -1,0 +1,31 @@
+package maraton1;
+
+public class Soru2 {
+
+	private static void tekrarEdenSayiyiBul(int[] array) {
+		int tekrarSayisi = 0;
+		int tekrarlayanSayi = 0;
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array.length; j++) {
+				if (array[i] != array[j]) {
+					
+				}
+			}
+		}
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[]sayiDizisi1 = {9, 7, 5, 3, 7, 7, 23, 18, 2, 0, 7};
+		int[]sayiDizisi2 = {0, 1, 5, 3};
+		int[]sayiDizisi3 = {2, 3, 43, 5, 3};
+		
+		
+		tekrarEdenSayiyiBul(sayiDizisi1);
+		tekrarEdenSayiyiBul(sayiDizisi2);
+		tekrarEdenSayiyiBul(sayiDizisi3);
+
+	}
+
+}

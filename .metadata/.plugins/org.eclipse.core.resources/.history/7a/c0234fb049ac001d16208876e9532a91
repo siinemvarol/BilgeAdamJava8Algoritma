@@ -1,0 +1,24 @@
+package maraton1;
+
+public class Soru3 {
+
+	private static int karakterSayici(String kelime, char karakter) {
+		int tekrarSayisi = 0;
+		char tekrarlayanHarf = karakter;
+		for (int i = 0; i < kelime.length(); i++) {
+			if (kelime.charAt(i) == tekrarlayanHarf) {
+				tekrarSayisi++;
+			}
+		}
+		return tekrarSayisi;
+
+	}
+
+	public static void main(String[] args) {
+		int sayimSonucu1 = karakterSayici("Bugün güzel bir gün", 'g');
+		System.out.println(sayimSonucu1);
+		int sayimSonucu2 = karakterSayici("Bugün güzel bir gün", 'x');
+		System.out.println(sayimSonucu2);
+	}
+
+}

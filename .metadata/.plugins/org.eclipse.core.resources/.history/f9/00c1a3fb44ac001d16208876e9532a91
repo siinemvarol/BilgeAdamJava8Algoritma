@@ -1,0 +1,30 @@
+package maraton1;
+
+import java.util.Scanner;
+
+public class Soru4 {
+
+	private static void geometrikHesaplayici() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("* * * * * * * * * * *");
+		System.out.println("Geometrik Hesaplayıcı");
+		System.out.println("* * * * * * * * * * *");
+		System.out.println("1. Kare alan hesaplama");
+		System.out.println("2. Kare çevre hesaplama");
+		System.out.println("3. Dikdörtgen alan hesaplama");
+		System.out.println("4. Dikdörtgen çevre hesaplama");
+		System.out.println("5. Daire alan hesaplama");
+		System.out.println("6. Daire Çevre hesaplama");
+		System.out.println("7. Çıkış");
+		do {
+
+		} while (secim != 7);
+
+	}
+
+	public static void main(String[] args) {
+		geometrikHesaplayici();
+
+	}
+
+}

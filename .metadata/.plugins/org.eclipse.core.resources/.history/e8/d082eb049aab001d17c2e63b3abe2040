@@ -1,0 +1,13 @@
+package lesson008;
+
+public class Question63 {
+	// parametre olarak 2 tane array alan ve aldığı arrayleri
+	// toplayıp farklı bir arrayin içine saklayan metod
+	// toplamları yazdıracağız
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

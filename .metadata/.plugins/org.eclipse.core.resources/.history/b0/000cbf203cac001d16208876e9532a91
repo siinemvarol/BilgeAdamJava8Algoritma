@@ -1,0 +1,26 @@
+package maraton1;
+
+public class Soru1 {
+
+	private static void yildizlariYazdir() {
+		String yildiz = "* ";
+			for (int i = 0; i < 7; i++) {
+				System.out.println(yildiz);
+				
+				if (i == 6) {
+					System.out.println(yildiz);
+					System.out.println(yildiz);
+					System.out.println(yildiz);
+				}
+				yildiz = yildiz + "* ";
+			}
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		yildizlariYazdir();
+	}
+
+}

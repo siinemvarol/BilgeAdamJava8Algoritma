@@ -6,7 +6,7 @@ public class Question45 {
 		// Outputlar aşağıdaki gibi olacak şekilde arrayler yazdırılacak:
 		// Bilge Adam
 		// AdvancedJava
-		// 
+		// ...
 		
 		String[][] matris1 = { { "Bilge", "Advanced" }, { "Postgre", "Data" } };
 		String[][] matris2 = { { "Adam", "Java" }, { "SQL", "Base" } };

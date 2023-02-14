@@ -11,7 +11,8 @@ public class Question49 {
 							{ 234, 21, 78, 26, 6 },
 							{ 654, 33, 32, 67, 2 },
 							{ 189, 35, 56, 89, 8 } };
-		
+
+		// Alternatif 1
 		int[][] tekSayilar = new int [4][5];
 		
 		for (int i = 0; i < matris.length; i++) {
@@ -33,6 +34,9 @@ public class Question49 {
 		System.out.println();
 		
 		System.out.println("\n-----------------\n");
+		
+		// Alternatif 2
+		
 		int [] tekSayilar2 = new int [matris.length * matris[0].length];
 		
 		for (int k = 0; k < matris.length; k++) {

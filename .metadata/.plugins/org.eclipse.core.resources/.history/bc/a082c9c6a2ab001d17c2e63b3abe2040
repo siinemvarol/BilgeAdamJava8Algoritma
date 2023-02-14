@@ -1,0 +1,52 @@
+package lesson008;
+
+public class Question64 {
+
+	public static void main(String[] args) {
+		// Cosenio - 5 dk veriliyor süresi
+		// girilen kelimenin ilk ve son harfini değiştirelim
+		// girilen kelimenin karakter sayısının 0 ile 100 arasında olması lazım
+		// eğer tek harfli girildiyse girilen harfi return etsin
+		System.out.println(harfDegistir("cosenio"));
+		System.out.println(harfDegistir2("cosenio"));
+
+		// oosenic yazmalı
+
+	}
+
+	private static String harfDegistir(String kelime) {
+		if (kelime.length() < 2) {
+			return kelime;
+		}
+		if (kelime.length() > 100 || kelime.length() < 0) {
+			System.out.println("yanlış");
+		}
+		char[] karakterler = kelime.toCharArray();
+		char ilkHarf = karakterler[0];
+		char sonHarf = karakterler[karakterler.length - 1];
+		karakterler[0] = sonHarf;
+		karakterler[karakterler.length - 1] = ilkHarf;
+		return String.valueOf(karakterler);
+
+	}
+	
+	private static String harfDegistir2(String kelime) {
+		if (kelime.length() < 2) {
+			return kelime;
+		}
+		if (kelime.length() > 100 || kelime.length() < 0) {
+			System.out.println("yanlış");
+		}
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		char first = kelime.charAt(0);
+		char last = kelime.charAt(kelime.length()-1);
+		
+		stringBuilder.setCharAt(0, last);
+		stringBuilder.setCharAt(kelime.length(), first);
+		
+		return stringBuilder.toString();
+
+	}
+
+}

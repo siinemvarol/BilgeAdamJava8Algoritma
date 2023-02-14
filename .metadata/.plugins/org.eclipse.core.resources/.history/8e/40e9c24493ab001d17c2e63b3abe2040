@@ -1,0 +1,14 @@
+package lesson008;
+
+public class Question62 {
+
+	public static void main(String[] args) {
+		// 2 metod yazılacak.
+		// 1- kullanıcıdan aldığımız email değerinde @ var mı diye kontrol edeceğiz 
+		// ve hotmail.com veya gmail.com ile mi bitiyor diye kontrol edeceğiz
+		
+		// password ve repassword alıp bunların uyuşup uyuşmadığını kontrol edeceğiz
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package lesson007;
+
+public class Question59 {
+
+	public static void main(String[] args) {
+		// 1. metod: parametre olarak array alacak. aldığı dizideki tek elemanları farklı bir diziye atacak
+		// 2. metod: tek sayıların olduğu diziyi ekrana yazdıracak
+
+	}
+
+}

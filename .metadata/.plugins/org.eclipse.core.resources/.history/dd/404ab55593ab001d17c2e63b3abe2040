@@ -1,0 +1,37 @@
+package lesson008;
+
+import java.util.Scanner;
+
+public class Question62 {
+	
+	private static void emailEslesiyorMu() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Email adresinizi girin: ");
+		String email = scanner.nextLine();
+		if (email.contains("@") && (email.contains("hotmail.com")|| email.contains("gmail.com") )) {
+			System.out.println("Email adresi geçerlidir");
+		}
+	}
+	
+	private static void passwordlerEslesiyorMu() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void main(String[] args) {
+		// 2 metod yazılacak.
+		// 1- kullanıcıdan aldığımız email değerinde @ var mı diye kontrol edeceğiz 
+		// ve hotmail.com veya gmail.com ile mi bitiyor diye kontrol edeceğiz
+		
+		// password ve repassword alıp bunların uyuşup uyuşmadığını kontrol edeceğiz
+		
+		emailEslesiyorMu();
+	//	passwordlerEslesiyorMu();
+
+	}
+
+
+
+
+
+}
