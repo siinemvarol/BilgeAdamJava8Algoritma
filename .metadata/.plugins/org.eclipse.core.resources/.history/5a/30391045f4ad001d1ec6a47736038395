@@ -1,0 +1,21 @@
+package lesson010;
+
+public class Profile {
+	// gerekli attribute'leri tanımlayalım (attribute / property / field)
+
+	//nesne özellikleri
+	public String profilResmi;
+	public String isim;
+	public String kullaniciAdi;
+	public String hakkindaAciklamasi;
+	public String baglantiLinki;
+	
+	public int takipciSayisi;
+	public int takipEttikleri;
+	
+	public String[] posts;
+	public int postSayisi;
+	
+	
+
+}

@@ -10,7 +10,7 @@ public class Question64 {
 		System.out.println(harfDegistir("cosenio"));
 		System.out.println(harfDegistir2("cosenio"));
 
-		// oosenic yazmalı
+		// oosyenic yazmalı
 		
 		boolean palindromKontrolu = isPalindrome("kayak");
 		
@@ -58,8 +58,9 @@ public class Question64 {
 	public static boolean isPalindrome(String kelime) {
 		// kelime --> kayak, ters çevrilmiş kelime --> kayak. bu ikisi eşit mi diye kontrol edeceğim
 		StringBuilder stringBuilder = new StringBuilder(kelime);
+		System.out.println(stringBuilder.reverse());
 		boolean isPalindrome = false;
-		if (stringBuilder.equals(stringBuilder.reverse())) {
+		if (stringBuilder.toString().equals(stringBuilder.reverse().toString())) {
 			isPalindrome = true;
 		}
 		

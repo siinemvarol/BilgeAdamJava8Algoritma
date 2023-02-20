@@ -1,0 +1,42 @@
+package lesson010;
+
+public class Profile {
+	// gerekli attribute'leri tanımlayalım (attribute / property / field)
+
+	//nesne özellikleri
+	public String profilResmi;
+	public String isim;
+	public String kullaniciAdi;
+	public String hakkindaAciklamasi;
+	public String baglantiLinki;
+	
+	public int takipciSayisi;
+	public int takipEttikleri;
+	
+	public String[] posts = new String[10];
+	public int postSayisi = posts.length;
+	
+	// post oluşturma metodu -->> ismini yazıp --> post oluşturdu desin
+	
+	public static void postOlusturma(String isim) {
+		System.out.println(isim + " yeni bir post oluşturdu");
+		
+	}
+	
+	// profilIsminiGuncelle -->> metodda isim alıp ismi güncelleyecek
+	public static void profilIsminiGuncelle(String yeniIsim) {
+		isim = yeniIsim;
+		
+	}
+	
+	
+	// gelenIstegiKabulEt metodu -->> takipçi sayısını arttıracak
+	
+	public static void profilIsminiGuncelle(String yeniIsim) {
+		isim = yeniIsim;
+		
+	}
+	
+	
+
+}

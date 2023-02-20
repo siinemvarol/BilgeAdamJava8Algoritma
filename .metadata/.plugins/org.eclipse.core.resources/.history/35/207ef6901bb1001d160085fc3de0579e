@@ -1,0 +1,48 @@
+package lesson012;
+
+public class Pizza {
+	
+	private int price;
+	private boolean vejeteryanMi = false;
+	
+	
+	public Pizza(boolean vejeteryanMi) {
+		this.price = setPrice();
+		this.vejeteryanMi = vejeteryanMi;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public int setPrice() {
+		if (vejeteryanMi == true) {
+			this.price = 300;
+		}
+		this.price = 200;
+		
+		return this.price;
+	}
+
+
+	public boolean isVejeteryanMi() {
+		return vejeteryanMi;
+	}
+
+
+	public void setVejeteryanMi(boolean vejeteryanMi) {
+		this.vejeteryanMi = vejeteryanMi;
+	}
+
+	@Override
+	public String toString() {
+		return "Pizza [price=" + price + ", vejeteryanMi=" + vejeteryanMi + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+}

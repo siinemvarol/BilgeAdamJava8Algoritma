@@ -1,0 +1,36 @@
+package lesson009;
+
+public class Question67 {
+	//Cosenio
+	
+	// girilen sayının, arraydeki kaç sayıdan büyük olduğunu bulan metod
+	// array uzunluğu 1 ile 100 arasında olacak
+	// girilen sayı 1 ile 100 arasında olacak
+	// arrayin içindeki sayılar da 1 ile 100 arasında olacak
+	// metod int bir değer dönecek
+	
+
+	
+
+	public static void main(String[] args) {
+		int[]myNum = { 1, 3, 4, 6, 9 };
+		
+		buyukleriSay(myNum, 6);
+		buyukleriSay(myNum, 3);
+	}
+
+	private static int buyukleriSay(int[]array, int sayi) {
+		int buyukSayiCounter = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > sayi) {
+				buyukSayiCounter++;
+			}
+		}
+		return buyukSayiCounter;
+		
+	}
+	
+}
+	
+	
+

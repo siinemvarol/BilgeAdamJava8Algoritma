@@ -1,0 +1,32 @@
+package lesson011;
+
+public class Main {
+	
+	// product sınıfı oluşturalım
+	// id, price, name, stock
+	// bilgileriGoster metodu yazalım, değişkenler private tanımlansın
+	// bir de boş constructor oluşturalım
+	
+	// veritabanına kaydet -> ürün ismi + veritabanına kaydedildi
+	// urunu güncelle -> ismini güncelleyeceğiz parametre olarak String name
+
+	public static void main(String[] args) {
+		
+		Product product1 = new Product();
+		product1.setId("123456");
+		product1.setName("asus");
+		product1.setPrice(15000);
+		product1.setStock(100);
+		
+		product1.bilgileriGoster();
+		
+		Product product2 = new Product("apple", "223355", 100, 20000);
+		product2.bilgileriGoster();
+		
+		product2.veritabanınaKaydet();
+		product2.urunuGuncelle("elma");
+		product2.bilgileriGoster();
+		
+	}
+
+}

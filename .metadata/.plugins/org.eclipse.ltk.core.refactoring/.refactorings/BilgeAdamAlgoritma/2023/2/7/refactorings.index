@@ -3,3 +3,7 @@
 1676288551820	Rename method 'emailEslesiyorMu'
 1676288564216	Rename local variable 'emailEslesiyorMu'
 1676364998123	Rename local variable 'kareKenarUzunlugu'
+1676463774318	Rename method 'buyukleriSay'
+1676567662301	Delete element
+1676632310645	Rename method 'urunuGuncelle'
+1676632466074	Rename method 'veritabanınaKaydet'

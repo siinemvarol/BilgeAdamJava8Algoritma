@@ -17,26 +17,21 @@ public class Question62 {
 	}
 
 	private static void emailGecerliMi2(String email) {
-		if (email.contains("@")){
+		if (email.contains("@")) {
 			int index = email.indexOf('@');
 			System.out.println(index);
 			String kontrol = email.substring(index, email.length());
 			System.out.println(kontrol);
-			
+
 			if (kontrol.equals("@hotmail.com") || kontrol.equals("gmail.com")) {
 				System.out.println("doğru format");
-			}
-			else {
+			} else {
 				System.out.println("email doğru format değil");
 			}
-		}
-		else {
+		} else {
 			System.out.println("@ karakteri içermiyor");
 		}
-		}
-		
-
-		
+	}
 
 	private static boolean passwordlerEslesiyorMu() {
 		Scanner scanner = new Scanner(System.in);
@@ -53,8 +48,9 @@ public class Question62 {
 	}
 
 	public static void login() {
-		boolean passwordCheck = passwordlerEslesiyorMu();
 		boolean emailCheck = emailGecerliMi();
+		boolean passwordCheck = passwordlerEslesiyorMu();
+		
 
 		if (passwordCheck && emailCheck) { // bunların öncelik sıralamasına göre console'da önce password sonra mail
 											// istiyor şu anda

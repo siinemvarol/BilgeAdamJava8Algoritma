@@ -1,0 +1,58 @@
+package lesson012;
+
+public class Pizza {
+	
+	private int price;
+	private boolean isVegie;
+	
+	// Constant
+	private static final int NORMAL_FIYAT = 200;
+	private static final int VEGI_FIYAT = 300;
+	
+	
+	public Pizza() {
+		
+	}
+		
+	public Pizza(boolean isVegie) {
+		
+		this.isVegie = isVegie;
+		if (this.isVegie) {
+			this.setPrice(VEGI_FIYAT);
+		}
+		else {
+			this.setPrice(NORMAL_FIYAT);
+		}
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+
+	}
+
+
+	public boolean isVegie() {
+		return isVegie;
+	}
+
+
+	public void setIsVegie(boolean isVegie) {
+		this.isVegie = isVegie;
+	}
+
+	@Override
+	public String toString() {
+		return "Pizza [price=" + price + ", vejeteryanMi=" + isVegie + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+}

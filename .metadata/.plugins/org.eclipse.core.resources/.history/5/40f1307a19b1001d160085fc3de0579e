@@ -1,0 +1,21 @@
+package lesson011.helper;
+
+import java.util.Random;
+
+public class RandomGenerateID {
+
+	public static String generateId() {
+		Random random = new Random();
+		int randomSayi = random.nextInt(1000,10000);
+		String randomSayiToString = Integer.toString(randomSayi);
+		return randomSayiToString;
+	}
+	
+	// product ismine göre 
+	public static String generateProductCode(String name) {
+		
+		String code = generateId();
+		String newCode = name.substring(0, 3) + code;
+		return newCode;
+	}
+}

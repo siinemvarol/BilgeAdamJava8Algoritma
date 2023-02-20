@@ -1,0 +1,12 @@
+package lesson011.helper;
+
+import java.util.Random;
+
+public class RandomGenerateID {
+
+	public int randomGenerateID() {
+		Random random = new Random();
+		int randomSayi = random.nextInt(111111, 999999);
+		return randomSayi;
+	}
+}
