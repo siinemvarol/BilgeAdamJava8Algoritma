@@ -53,15 +53,42 @@ public class Question69 {
 	// B harfi ile başlayan şehirlerin ilk 3 harfini alalım
 	// metod parametre olarak dizi alsın, for each kullanalım
 
-	private static void bIleBaslayanSehirler(String[] array) {
-		for (String il: array) {
-			if (il.startsWith("B")) {
+	public static void bIleBaslayanSehirler(String[] array) {
+		for (String il : array) {
+			if (il.startsWith("B")) { // il.charAt(0) da olabilirdi bu koşul
 				String firstThree2 = il.substring(0, 3).toUpperCase();
 				System.out.println(firstThree2);
 			}
 		}
 
 	}
+
+	// Sesli harfleri silip silinmiş halini return eden bir metod yazalım
+	// metod string array dönecek, parametre almayacak
+	// return edilen arrayi mainde yazdıralım
+
+//	public static String[] sesliHarfleriSil() {
+//		
+//		String[] sonuc = new String[iller.length];
+//		int counter = 0;
+//		for (int i = 0; i < iller.length; i++) {
+//			counter = 0;
+//			for (int j = 0; j <iller[i].length(); j++) {
+//				if ( switch (iller[i].charAt(j)) {
+//						case 'a':
+//							sonuc[]
+//							break;
+//
+//						default:
+//							break;
+//						})
+//		
+//		
+//		
+//			}
+//		}
+//		return sonuc;
+//	}
 
 	public static void main(String[] args) {
 

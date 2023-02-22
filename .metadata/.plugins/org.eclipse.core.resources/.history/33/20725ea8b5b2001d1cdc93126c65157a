@@ -1,0 +1,102 @@
+package lesson013;
+
+import java.util.Scanner;
+
+public class Sinav {
+	
+	
+	//programı run ettiğimde arka tarafta heapte kendine bir yer açıyordu
+	
+	static String[] cevapSecenekleri = {"A", "B", "C", "D" };
+	private int maxPuan;
+	private int sure;
+	private int soruSayisi;
+	private String ders;
+	private String konu;
+	private Soru[] sorular;	
+	private String[] cevaplar;
+			
+	public Sinav() {
+		super();
+	}
+	public int getMaxPuan() {
+		return maxPuan;
+	}
+	public void setMaxPuan(int maxPuan) {
+		this.maxPuan = maxPuan;
+	}
+	public int getSure() {
+		return sure;
+	}
+	public void setSure(int sure) {
+		this.sure = sure;
+	}
+	public int getSoruSayisi() {
+		return soruSayisi;
+	}
+	public void setSoruSayisi(int soruSayisi) {
+		this.soruSayisi = soruSayisi;
+	}
+	public String getDers() {
+		return ders;
+	}
+	public void setDers(String ders) {
+		this.ders = ders;
+	}
+	public String getKonu() {
+		return konu;
+	}
+	public void setKonu(String konu) {
+		this.konu = konu;
+	}
+	public Soru[] getSorular() {
+		return sorular;
+	}
+	public void setSorular(Soru[] sorular) {
+		this.sorular = sorular;
+	}
+	public String[] getCevapSecenekleri() {
+		return cevapSecenekleri;
+	}
+	public void setCevapSecenekleri(String[] cevapSecenekleri) {
+		this.cevapSecenekleri = cevapSecenekleri;
+	}
+	public String[] getCevaplar() {
+		return cevaplar;
+	}
+	public void setCevaplar(String[] cevaplar) {
+		this.cevaplar = cevaplar;
+	}
+	
+	public void sinavOlustur() {
+		// dersi alalım
+		// konuyu alalım
+		// sınav süresi alalım
+		// soru sayısını alalım -> 5
+		// 5 tane soru oluşturalım 
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("dersi girin: ");
+		ders = scanner.nextLine();
+		System.out.println("konuyu girin: ");
+		konu = scanner.nextLine();
+		System.out.println("sınav süresini girin: ");
+		sure = Integer.valueOf(scanner.nextLine());
+		System.out.println("kaç soru sormak istiyorsunuz: ");
+		soruSayisi = Integer.valueOf(scanner.nextLine());		// sorular = new Soru[scanner.nextInt()];
+		
+		sorular = new Soru[soruSayisi];
+		
+		for (int i = 0; i < sorular.length; i++) {
+			sorular[i] = new Soru();
+			sorular[i].soruOlustur(cevapSecenekleri);
+			}
+		for (int i = 0; i<soruSayisi; i++) {
+			System.out.println(sorular[i]);
+		}
+		
+		
+	}
+	
+	
+}

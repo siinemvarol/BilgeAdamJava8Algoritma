@@ -1,0 +1,12 @@
+package lesson013;
+
+public class Main {
+	
+	// Sınav sınıfı oluşturalım ve attribute'lerini yazalım
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package lesson013;
+
+import java.util.Scanner;
+
+public class Sinav {
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	private String soruMetni;
+	private int secenekSayisi;
+	private String secenekMetni;
+	private int dogruCevapSecenegi;
+	
+	public void soruMetniniYaz() {
+		System.out.println("soru metnini girin: ");
+		setSoruMetni(scanner.nextLine());
+	}
+
+	public String getSoruMetni() {
+		return soruMetni;
+	}
+
+	public void setSoruMetni(String soruMetni) {
+		this.soruMetni = soruMetni;
+	}
+
+	public int getSecenekSayisi() {
+		return secenekSayisi;
+	}
+
+	public void setSecenekSayisi(int secenekSayisi) {
+		this.secenekSayisi = secenekSayisi;
+	}
+
+	public String getSecenekMetni() {
+		return secenekMetni;
+	}
+
+	public void setSecenekMetni(String secenekMetni) {
+		this.secenekMetni = secenekMetni;
+	}
+
+	public int getDogruCevapSecenegi() {
+		return dogruCevapSecenegi;
+	}
+
+	public void setDogruCevapSecenegi(int dogruCevapSecenegi) {
+		this.dogruCevapSecenegi = dogruCevapSecenegi;
+	}
+	
+	
+
+}

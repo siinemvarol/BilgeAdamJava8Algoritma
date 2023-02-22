@@ -1,0 +1,74 @@
+package lesson013;
+
+import java.util.Scanner;
+
+public class Sinav {
+	
+	int maxPuan;
+	int sure;
+	int soruSayisi;
+	String ders;
+	String konu;
+	String[] sorular;
+	String[] cevapSecenekleri;
+	String[] cevaplar;
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	private String soruMetni;
+	private int secenekSayisi;
+	private String secenekMetni;
+	private int dogruCevapSecenegi;
+	
+	public void soruMetniniAl() {
+		System.out.println("soru metnini girin: ");
+		setSoruMetni(scanner.nextLine());
+	}
+	
+	public int secenekSayisiniAl() {
+		System.out.println("seçenek sayısını girin: ");
+		setSecenekSayisi(scanner.nextInt());
+		
+		return getSecenekSayisi();
+	}
+	
+	
+	
+	
+	
+
+	public String getSoruMetni() {
+		return soruMetni;
+	}
+
+	public void setSoruMetni(String soruMetni) {
+		this.soruMetni = soruMetni;
+	}
+
+	public int getSecenekSayisi() {
+		return secenekSayisi;
+	}
+
+	public void setSecenekSayisi(int secenekSayisi) {
+		this.secenekSayisi = secenekSayisi;
+	}
+
+	public String getSecenekMetni() {
+		return secenekMetni;
+	}
+
+	public void setSecenekMetni(String secenekMetni) {
+		this.secenekMetni = secenekMetni;
+	}
+
+	public int getDogruCevapSecenegi() {
+		return dogruCevapSecenegi;
+	}
+
+	public void setDogruCevapSecenegi(int dogruCevapSecenegi) {
+		this.dogruCevapSecenegi = dogruCevapSecenegi;
+	}
+	
+	
+
+}
