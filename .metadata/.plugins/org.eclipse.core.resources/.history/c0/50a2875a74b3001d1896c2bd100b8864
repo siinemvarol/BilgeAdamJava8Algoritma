@@ -1,0 +1,11 @@
+package lesson014;
+
+public class UserManager {
+
+	public void generateAutoEmail(User user) {
+		user.setEmail(user.getName().toLowerCase().replace(' ', '.') + "." + user.getSurname().toLowerCase() + "@xbank.com");
+	}
+	// replace ( değiştirilmesi istenen, neyle değiştireceğiz);
+	// replace(' ', '.') yerine replace(" ", ".") de olabilir
+
+}

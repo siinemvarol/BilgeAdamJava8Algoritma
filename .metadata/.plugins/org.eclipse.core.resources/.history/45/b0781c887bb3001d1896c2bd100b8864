@@ -1,0 +1,14 @@
+package lesson014;
+
+public class AdminManager {
+	
+	public void krediBasvurusunuOnayla(Account account) {
+		if(account.isKrediBasvurusu()) {
+			account.setMoney(account.getMoney() + account.getIstenenKredi());
+		}
+		else {
+			System.out.println("bu hesaba ait kredi başvurusu bulunamadı");
+		}
+	}
+
+}

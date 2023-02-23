@@ -1,2 +1,7 @@
 1676896870382	Rename field 'vejeteryanMi'
 1676896882023	Rename field 'isVegir'
+1677149606194	Rename method 'paraYatir'
+1677149770730	Rename method 'paraCek'
+1677150614951	Rename local variable 'acc1'
+1677156151569	Rename field 'istenenKrediMiktari'
+1677156208031	Rename local variable 'krediMiktari'

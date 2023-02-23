@@ -1,0 +1,24 @@
+package lesson014;
+
+public class UserManager {
+	
+	private String mailAdresi;
+	
+	public UserManager() {
+		
+	}	
+	
+	public UserManager (String mailAdresi) {
+		this.mailAdresi = mailAdresi;
+	}
+
+	public String getMailAdresi() {
+		return mailAdresi;
+	}
+
+	public void setMailAdresi(String mailAdresi) {
+		this.mailAdresi = mailAdresi;
+	}
+	
+
+}

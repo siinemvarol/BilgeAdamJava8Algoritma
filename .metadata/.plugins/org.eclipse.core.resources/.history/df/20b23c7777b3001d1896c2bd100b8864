@@ -1,0 +1,35 @@
+package lesson014;
+
+public class UserManager {
+
+	private final String emailFormat = "@xbanka.com";
+
+	public void generateAutoEmail(User user) {
+		user.setEmail(
+				user.getName().toLowerCase().replace(' ', '.') + "." + user.getSurname().toLowerCase() + emailFormat);
+	}
+	// replace ( değiştirilmesi istenen, neyle değiştireceğiz);
+	// replace(' ', '.') yerine replace(" ", ".") de olabilir
+
+	// alternatif metod aşağıda
+	public void otomatikEmailOlustur(User user) {
+		String otomatikOlusanEmail = user.getName().toLowerCase().replaceAll(" ", ("."))
+				.concat("." + user.getSurname().toLowerCase().replace(' ', ('.'))) + emailFormat;
+
+		user.setEmail(otomatikOlusanEmail);
+
+		System.out.println(otomatikOlusanEmail);
+	}
+	
+	public void krediBasvurusundaBulun(Account account, int krediMiktari) {
+		account.setKrediBasvurusu(true);
+		if (krediMiktari > 0 && krediMiktari <= account.getMoney()) {
+			account.setMoney(account.getMoney() + krediMiktari);
+			System.out.println("kredi başvurunuz olumlu. " + krediMiktari + " TL hesabınıza aktarıldı");
+		}
+		else {
+			System.err.println("bakiyenizden fazla kredi başvurusunda bulunamazsınız. bakiye: " + account.getMoney());
+		}
+	}
+
+}

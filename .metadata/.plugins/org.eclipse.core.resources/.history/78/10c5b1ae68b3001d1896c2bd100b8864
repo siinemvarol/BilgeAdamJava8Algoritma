@@ -1,0 +1,57 @@
+package lesson014;
+
+import java.util.Scanner;
+
+public class Account {
+
+	private String accountNo;
+	private int money;
+
+	public Account() {
+
+	}
+
+	public Account(String accountNo, int money) {
+		super();
+		this.accountNo = accountNo;
+		this.money = money;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+//	public void setAccountNo(int accountNo) {
+//		this.accountNo = accountNo;
+//	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+	public void depositMoney(int money) {
+
+		if (money > 0 && money <= 10000) {
+			this.setMoney(this.getMoney() + money);
+			System.out.println(money + " TL hesabınıza yatırıldı. Hesap bakiyesi: " + this.getMoney());
+		} else {
+			System.out.println("Sadece 1 TL - 10.000 TL yatırabilirsiiz.");
+		}
+
+	}
+
+	public void paraCek(int money) {
+
+		if (money <= getMoney()) {
+			setMoney(getMoney() - money);
+			System.out.println(money + " TL hesabınızdan çekildi. Hesap bakiyesi: " + getMoney());
+		} else {
+			System.out.println("Hesap bakiyeniz yeterli değildir");
+		}
+	}
+
+}
