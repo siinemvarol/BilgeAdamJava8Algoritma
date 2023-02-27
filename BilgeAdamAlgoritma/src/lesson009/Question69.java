@@ -67,43 +67,88 @@ public class Question69 {
 	// metod string array dönecek, parametre almayacak
 	// return edilen arrayi mainde yazdıralım
 
-//	public static String[] sesliHarfleriSil() {
-//		
-//		String[] sonuc = new String[iller.length];
-//		int counter = 0;
-//		for (int i = 0; i < iller.length; i++) {
-//			counter = 0;
-//			for (int j = 0; j <iller[i].length(); j++) {
-//				if ( switch (iller[i].charAt(j)) {
-//						case 'a':
-//							sonuc[]
-//							break;
-//
-//						default:
-//							break;
-//						})
-//		
-//		
-//		
+	// aşağıdaki metod ilk büyük olan harfleri silemiyor
+	public static String[] sesliHarfleriSil() {
+
+		String[] sesliHarfleriSilinmis = new String[iller.length];
+		for (int i = 0; i < iller.length; i++) {
+			for (int j = 0; j < iller[i].length(); j++) {
+				char kontrol = iller[i].charAt(j);
+				switch (kontrol) {
+				case 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü':
+					iller[i].replaceAll(String.valueOf(kontrol), "");
+					break;
+				case 'A', 'E', 'I', 'İ', 'O', 'Ö', 'U', 'Ü':
+					iller[i].replaceAll(String.valueOf(kontrol), "");
+					break;
+
+				default:
+					break;
+				}
+
+			}
+			sesliHarfleriSilinmis[i] =	iller[i];
+		}
+		return sesliHarfleriSilinmis;
+	}
+	
+	// aşağıdaki metod yeni bir arraye atamıyor
+//	private static String[] sesliHarfleriSil2() {
+//		String[] sesliSil = new String[iller.length];
+//		int a = 0;
+//		for (String kelime : iller) {
+//			for (int i = 0; i < kelime.length(); i++) {
+//				if ("AEIİOÖUÜaeıioöuü".contains(String.valueOf(kelime.charAt(i)))) {
+//					sesliSil[i] = kelime.replace(String.valueOf(kelime.charAt(i)), "");
+//					
+//				}
 //			}
 //		}
-//		return sonuc;
+//		return sesliSil;
 //	}
+	
+	// aşağıdaki metod çalışıyor ama tüm ilk harfleri küçük harfe çeviriyor
+	public static String[] sesliHarfleriSil3() {
+		String[] sesliHarfler = {"a", "e", "ı", "i", "o", "ö", "u", "ü"};
+		String[] yeniDizi = new String[iller.length];
+		
+		for (int i = 0; i < iller.length; i++) {
+			for (int j = 0; j < sesliHarfler.length; j++) {
+				if(iller[i].toLowerCase().contains(sesliHarfler[j])) {
+					iller[i] = iller[i].toLowerCase().replace(sesliHarfler[j], "");
+				}
+			}
+			yeniDizi[i] = iller[i];
+		}
+		return yeniDizi;
+	}
 
 	public static void main(String[] args) {
 
-		illeriBul('a');
-
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("değer girin: ");
-		String deger = scanner.nextLine();
-
-		illeriBul(deger.charAt(0));
-
-		plakaBul(iller, "Ankara", "Karaman", "Tekirdağ");
-
-		System.out.println("------");
-		bIleBaslayanSehirler(iller);
+//		illeriBul('a');
+//
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("değer girin: ");
+//		String deger = scanner.nextLine();
+//
+//		illeriBul(deger.charAt(0));
+//
+//		plakaBul(iller, "Ankara", "Karaman", "Tekirdağ");
+//
+//		System.out.println("------");
+//		bIleBaslayanSehirler(iller);
+//
+//		System.out.println("------");
+//		String [] sesliHarfleriSilinmis = sesliHarfleriSil3();
+//		for (int i = 0; i < sesliHarfleriSilinmis.length; i++) {
+//			System.out.println(sesliHarfleriSilinmis[i]);
+//		}
+		
+		System.out.println("\n------");
+		String [] sesliHarfleriSilinmis2 = sesliHarfleriSil();
+		for (int i = 0; i < sesliHarfleriSilinmis2.length; i++) {
+			System.out.println(sesliHarfleriSilinmis2[i]);
+		}
 
 	}
 

@@ -26,6 +26,8 @@ public class User {
 		this.surname = surname;
 		this.account = account;
 	}
+	
+
 
 	public String getName() {
 		return name;

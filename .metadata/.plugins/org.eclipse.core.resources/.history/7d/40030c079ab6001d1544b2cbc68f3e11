@@ -1,0 +1,22 @@
+package lesson015.veteriner;
+
+public class Veteriner extends Insan {
+	
+	private String mezunOlduguOkul;
+	private int calismaSuresi;
+	public String getMezunOlduguOkul() {
+		return mezunOlduguOkul;
+	}
+	public void setMezunOlduguOkul(String mezunOlduguOkul) {
+		this.mezunOlduguOkul = mezunOlduguOkul;
+	}
+	public int getCalismaSuresi() {
+		return calismaSuresi;
+	}
+	public void setCalismaSuresi(int calismaSuresi) {
+		this.calismaSuresi = calismaSuresi;
+	}
+	
+	
+
+}

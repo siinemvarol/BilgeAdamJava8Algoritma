@@ -1,0 +1,17 @@
+package lesson015.veteriner;
+
+public class Main {
+	
+	// kedi nesnesi oluşturduğumuzda kedinin türü olarak otomatik olarak "kedi" olsun
+	// köpek nesnesi oluşturduğumuzda köpeğin türü olarak otomatik olarak "köpek" olsun
+	
+	// Hayvan sınıfında 2 tane avstract metod oluşturalım
+	// bilgileri göster -> toString metodunu kullanalım
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

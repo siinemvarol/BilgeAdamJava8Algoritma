@@ -1,0 +1,15 @@
+package lesson015;
+
+public class Main {
+	// Mülakatta soruldu
+	// abstract sınıflar ve interface farkı
+	
+	// Interface'ler bir sınıfın nasıl davranacağını söyler
+	// Interface'lerde gövdeli metod yazamıyoruz.
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

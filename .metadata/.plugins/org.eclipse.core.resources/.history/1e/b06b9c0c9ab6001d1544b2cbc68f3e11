@@ -1,0 +1,7 @@
+package lesson015.veteriner;
+
+public class Musteri extends Insan {
+	
+	private String adres;
+
+}

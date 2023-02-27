@@ -1,0 +1,74 @@
+package lesson014;
+
+// String name, surname, email, Account account
+// mainde user oluştururken bir de account verelim
+
+public class User {
+
+	private String name;
+	private String surname;
+	private String email;
+	private Account account;
+	
+	public User() {
+		
+	}
+
+//	public User(String name, String surname, String email, Account account) {
+//		this.name = name;
+//		this.surname = surname;
+//		this.email = email;
+//		this.account = account;
+//	}
+	
+	public User(String name, String surname, Account account) {
+		this.name = name;
+		this.surname = surname;
+		this.account = account;
+	}
+	
+	public void krediBorcunuOde(User user, int odeme) {
+		if (user.getAccount().isKrediBasvurusu() == false) {
+			System.err.println("Aktif krediniz olmadığı için işleminizi gerçekleştiremiyoruz.");
+		}
+		else if (user.getAccount().isKrediBasvurusu() == true && odeme <= user.getAccount().getIstenenKredi()){
+			user.getAccount().setMoney(user.getAccount().getMoney() + odeme);
+		}
+		else {
+			System.err.println("Hatalı işlem yaptınız !");
+		}
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+}

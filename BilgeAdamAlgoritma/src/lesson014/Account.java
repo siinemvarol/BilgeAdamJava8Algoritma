@@ -8,8 +8,12 @@ public class Account {
 	private int money;
 	private boolean krediBasvurusu;
 	private int istenenKredi;
+	private boolean krediAlindiMi;
+	private int krediBorcu;
+	private int krediNotu;
 	
-	
+	private boolean krediBorcuOdendiMi;
+	private int nakitAvans;
 
 	public Account() {
 		this.accountNo = randomAccountNo();
@@ -49,6 +53,47 @@ public class Account {
 		this.istenenKredi = istenenKrediMiktari;
 	}
 
+	public boolean isKrediAlindiMi() {
+		return krediAlindiMi;
+	}
+
+	public void setKrediAlindiMi(boolean krediAlindiMi) {
+		this.krediAlindiMi = krediAlindiMi;
+	}
+
+	public int getKrediBorcu() {
+		return krediBorcu;
+	}
+
+	public void setKrediBorcu(int krediBorcu) {
+		this.krediBorcu = krediBorcu;
+	}
+
+	public int getKrediNotu() {
+		return krediNotu;
+	}
+
+	public void setKrediNotu(int krediNotu) {
+		this.krediNotu = krediNotu;
+	}
+		
+
+	public boolean isKrediBorcuOdendiMi() {
+		return krediBorcuOdendiMi;
+	}
+
+	public void setKrediBorcuOdendiMi(boolean krediBorcuOdendiMi) {
+		this.krediBorcuOdendiMi = krediBorcuOdendiMi;
+	}
+
+	public int getNakitAvans() {
+		return nakitAvans;
+	}
+
+	public void setNakitAvans(int nakitAvans) {
+		this.nakitAvans = nakitAvans;
+	}
+
 	public void depositMoney(int money) {
 
 		if (money > 0 && money <= 10000) {
@@ -69,10 +114,10 @@ public class Account {
 			System.err.println("Hesap bakiyeniz yeterli değildir");
 		}
 	}
-	
+
 	private String randomAccountNo() {
 		Random random = new Random();
-		Long sayi = random.nextLong(1000,5000);
+		Long sayi = random.nextLong(1000, 5000);
 		String accountNo = String.valueOf(sayi);
 		return accountNo;
 	}

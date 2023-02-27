@@ -6,8 +6,13 @@ public class AdminManager {
 		if(account.isKrediBasvurusu()) {
 			System.out.println("Kredi başvurunuz onaylanmıştır!");
 			account.setMoney(account.getMoney() + account.getIstenenKredi());
+			
+			account.setKrediBorcu(account.getIstenenKredi());
+			account.setKrediAlindiMi(true);
+			
 			account.setKrediBasvurusu(false);
 			account.setIstenenKredi(0);
+			
 		}
 		else {
 			System.err.println("Bu hesaba ait kredi başvurusu bulunamadı.");
@@ -18,6 +23,11 @@ public class AdminManager {
 		if(user.getAccount().isKrediBasvurusu()) {
 			System.out.println("Kredi başvurunuz onaylanmıştır!");
 			user.getAccount().setMoney(user.getAccount().getMoney() + user.getAccount().getIstenenKredi());
+			
+			user.getAccount().setKrediBorcu(user.getAccount().getIstenenKredi());
+			user.getAccount().setKrediAlindiMi(true);
+			
+			
 			user.getAccount().setKrediBasvurusu(false);
 			user.getAccount().setIstenenKredi(0);
 		}

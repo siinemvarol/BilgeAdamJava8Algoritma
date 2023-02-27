@@ -1,0 +1,40 @@
+package homework2_24022023;
+
+public class Lig {
+
+	private String ligAdi;
+	private Takim[] takimlar;
+	private int takimSayisi;
+	
+	public void takimEkle(String name) {
+		Takim takim = new Takim();
+		takim.setName(name);
+		this.takimlar[this.takimSayisi] = takim;
+		takimSayisi++;
+	}
+
+	public String getLigAdi() {
+		return ligAdi;
+	}
+
+	public void setLigAdi(String ligAdi) {
+		this.ligAdi = ligAdi;
+	}
+
+	public Takim[] getTakimlar() {
+		return takimlar;
+	}
+
+	public void setTakimlar(Takim[] takimlar) {
+		this.takimlar = takimlar;
+	}
+
+	public int getTakimSayisi() {
+		return takimSayisi;
+	}
+
+	public void setTakimSayisi(int takimSayisi) {
+		this.takimSayisi = takimSayisi;
+	}
+
+}

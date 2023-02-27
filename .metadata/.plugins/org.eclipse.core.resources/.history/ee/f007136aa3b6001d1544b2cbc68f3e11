@@ -1,0 +1,56 @@
+package lesson015.veteriner;
+
+import java.util.ArrayList;
+
+public class Veteriner extends Insan {
+
+	private String okul;
+	private int calismaYili;
+	private ArrayList<Musteri> musteriListesi;  
+
+	public Veteriner(String tc, String isim, String okul, int calismaYili) {
+		super(tc, isim);
+		this.okul = okul;
+		this.calismaYili = calismaYili;
+		musteriListesi = new ArrayList<Musteri>();
+	}
+	
+	public void musteriEkle(Musteri musteri) {
+		musteriListesi.add(musteri);
+		System.out.println(musteri.getName() + " " + getName() + " 'e müşteri olarak eklendi");
+	}
+	
+	public void musteriGoruntule() {
+		for (Musteri musteri : musteriListesi) {
+			System.out.println(musteri.getName());
+		}
+	}
+
+	@Override
+	public void bilgileriGoster() {
+		System.out.println(toString());
+
+	}
+
+	public String getOkul() {
+		return okul;
+	}
+
+	public void setOkul(String okul) {
+		this.okul = okul;
+	}
+
+	public int getCalismaYili() {
+		return calismaYili;
+	}
+
+	public void setCalismaYili(int calismaYili) {
+		this.calismaYili = calismaYili;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " Veteriner [okul=" + okul + ", calismaYili=" + calismaYili + "]";
+	}
+
+}

@@ -1,0 +1,33 @@
+package lesson014;
+
+public class Homework2 {
+	
+/*	Takım diye bir sınıf oluşturalım. name, puan ve kasa fieldları olsun
+	takımlar aralarında maç yapacak şekilde metod yazalım
+	metodda random 1, 2 ve 3 sayıları arasından seçilecek. 1 gelirse ilk takım maçı kazanacak 3 puan alacak ve
+	takım kasasına 10.000 TL eklenecek; 2 gelirse ikinci takım maçı kazanacak 3 puan alacak ve takım kasasına 10.000 TL
+	eklenecek. 1 veya 2 gelmezse eğer maç berabere biter, iki takım da 1'er puan alır ve iki takımın da kasasına
+	5.000 TL eklenir.
+	takım1 barcelona takım2 real madrid, barcelona real madride karşı maçı kazanmıştır
+	
+	// takimManager.macYap(takim1, takim2);
+	 * 
+	 * kasa göster metodu
+	 * çıktı --> takim ismi ... + takım kasası...
+	 * 
+	 * puan durumu gösteren metod. parametre olarak takımlar arrayini göndericez
+	 * çıktı --> takım + puanı bize yazdırsın
+	 * 
+	 * iflasEtmeDurumu()nda olan takımları bize göstersin 
+	 * takımın kasası 5.000 TL'den az ise bu takımları listeleyeceğiz
+	 * 
+	 * Şampiyonu göster metodu
+	 * parametre olarak takımlar array alsın
+	 * !!Şampiyon .... yazdırsın
+	 * 
+	
+	
+	
+	*/
+
+}

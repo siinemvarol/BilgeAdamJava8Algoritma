@@ -1,0 +1,30 @@
+package lesson015.veteriner;
+
+public class Veteriner extends Insan {
+
+	private String okul;
+	private int calismaSuresi;
+	
+	public Veteriner(String tcKimlik, String isim, String mezunOlduguOkul, int calismaSuresi) {
+		super(tcKimlik, isim);
+		this.okul = mezunOlduguOkul;
+		this.calismaSuresi = calismaSuresi;
+	}
+
+	public String getMezunOlduguOkul() {
+		return okul;
+	}
+
+	public void setMezunOlduguOkul(String mezunOlduguOkul) {
+		this.okul = mezunOlduguOkul;
+	}
+
+	public int getCalismaSuresi() {
+		return calismaSuresi;
+	}
+
+	public void setCalismaSuresi(int calismaSuresi) {
+		this.calismaSuresi = calismaSuresi;
+	}
+
+}

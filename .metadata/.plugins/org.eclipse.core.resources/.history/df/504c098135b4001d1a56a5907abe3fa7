@@ -1,0 +1,69 @@
+package lesson014;
+
+public class UserManager {
+
+	private final String emailFormat = "@xbanka.com";
+
+	public void generateAutoEmail(User user) {
+		user.setEmail(
+				user.getName().toLowerCase().replace(' ', '.') + "." + user.getSurname().toLowerCase() + emailFormat);
+	}
+	// replace ( değiştirilmesi istenen, neyle değiştireceğiz);
+	// replace(' ', '.') yerine replace(" ", ".") de olabilir
+
+	// alternatif metod aşağıda
+	public void otomatikEmailOlustur(User user) {
+		String otomatikOlusanEmail = user.getName().toLowerCase().replaceAll(" ", ("."))
+				.concat("." + user.getSurname().toLowerCase().replace(' ', ('.'))) + emailFormat;
+
+		user.setEmail(otomatikOlusanEmail);
+
+		System.out.println(otomatikOlusanEmail);
+	}
+	
+	public void krediBasvurusundaBulun(Account account, int para) {
+		account.setKrediBasvurusu(true);
+		account.setIstenenKredi(para);
+		
+		System.out.println(para + " TL için kredi başvurusunda bulundunuz..");
+		System.out.println("başvuru sonucu bekleniyor..");
+
+	}
+	
+	public void krediBorcunuOde(Account account, int taksit) {
+		if (account.isKrediAlindiMi()) {
+			if (account.getKrediBorcu() < taksit) {
+				System.out.println("Kredi borcunuz yatırılan miktardan az");
+			}
+			else {
+				account.setKrediBorcu(account.getKrediBorcu()-taksit);
+				System.out.println(taksit + " TL ödeme yaptınız. Güncel borç: " + account.getKrediBorcu());
+			}
+			
+		}
+
+		else {
+			System.err.println("Aktif krediniz olmadığı için işleminizi gerçekleştiremiyoruz.");
+		}
+	}
+	
+	public void hesaptanKrediBorcunuOde(Account account, int taksit) {
+		if (account.isKrediAlindiMi()) {
+			if (account.getKrediBorcu() < taksit) {
+				System.out.println("Kredi borcunuz yatırılan miktardan az");
+			}
+			else {
+				account.setKrediBorcu(account.getKrediBorcu()-taksit);
+				account.setMoney(account.getMoney()-taksit);
+				System.out.println(taksit + " TL ödeme yaptınız. Güncel borç: " + account.getKrediBorcu());
+			}
+			
+		}
+
+		else {
+			System.err.println("Aktif krediniz olmadığı için işleminizi gerçekleştiremiyoruz.");
+		}
+	}
+	
+
+}

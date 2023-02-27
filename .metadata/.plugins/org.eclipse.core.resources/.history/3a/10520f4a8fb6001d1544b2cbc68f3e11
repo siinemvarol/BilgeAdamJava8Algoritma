@@ -1,0 +1,9 @@
+package lesson015.veteriner;
+
+public class Kopek extends Hayvan{
+	
+	int asiSayisi;
+	String cins;
+	String tur;
+
+}

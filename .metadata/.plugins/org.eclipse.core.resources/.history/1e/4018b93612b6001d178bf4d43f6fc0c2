@@ -1,0 +1,39 @@
+package homework1_24022023;
+
+public class EmployeeManager {
+
+	public void tax(Employee employee) {
+		if (employee.getSalary() > 0 && employee.getSalary() <= 2000) {
+			employee.setTax(0);
+			System.out.println("Taxes did not applied because salary is equal to or lower than 2000 TL.");
+		} else {
+			employee.setTax(employee.getSalary() * 0.05F);
+			System.out.println("Taxes calculated as 5% of the salary. Calculated tax: " + employee.getTax());
+		}
+
+	}
+
+	public void bonus(Employee employee) {
+		if (employee.getWorkHours() > 40) {
+			employee.setBonus((employee.getWorkHours() - 40) * 30);
+			employee.setSalary(employee.getSalary() + employee.getBonus());
+			System.out.println("Bonus is added to salary. Work hours: " + employee.getWorkHours()
+					+ "Calculated bonus: " + employee.getBonus() + "Bonus added salary: " + employee.getSalary());
+		} else {
+			System.out.println("Bonus did not added to salary because work hours are less than 40.");
+		}
+	}
+
+	public void raiseSalary(Employee employee) {
+		if (((2023 - employee.getHireYear()) >= 0) && (2023 - employee.getHireYear()) < 10) {
+			employee.setSalaryRaise(employee.getSalary() * 0.05F);
+		} else if (((2023 - employee.getHireYear()) >= 10) && (2023 - employee.getHireYear()) < 20) {
+			employee.setSalaryRaise(employee.getSalary() * 0.10F);
+		} else if ((2023 - employee.getHireYear()) >= 20) {
+			employee.setSalaryRaise(employee.getSalary() * 0.15F);
+		} else {
+			System.out.println("Raise could not calculated because hire year is invalid.");
+		}
+	}
+
+}

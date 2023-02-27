@@ -1,0 +1,27 @@
+package lesson015.veteriner;
+
+public class Main {
+	
+	// kedi nesnesi oluşturduğumuzda kedinin türü olarak otomatik olarak "kedi" olsun
+	// köpek nesnesi oluşturduğumuzda köpeğin türü olarak otomatik olarak "köpek" olsun
+	
+	// Hayvan sınıfında 2 tane abstract metod oluşturalım
+	// bilgileri göster -> toString metodunu kullanalım
+	// diğer metod da karneOlustur() -> cinsini ve türünü alıp bize karne oluştursun
+ 	
+
+	public static void main(String[] args) {
+		
+		Kopek kopek1 = new Kopek("goldie", true, "15.10.1996", "golden");
+		
+		Kedi kedi1 = new Kedi("miniş", true, "01.01.2020", "tekir");
+		
+		kopek1.abstractBilgileriGoster();
+		kedi1.abstractBilgileriGoster();
+		
+		kopek1.karneOlustur();
+		kedi1.karneOlustur();
+
+	}
+
+}

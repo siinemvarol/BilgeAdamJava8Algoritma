@@ -40,6 +40,23 @@ public class Main {
 	// krediBasvurusunun olması lazım
 	
 	// Account nesnesi oluşturduğumuzda otomatik ID atasın
+	
+	// -------
+	// krediBorcunuOde() metodu yazalım
+	// atm'den nakit odeme yapılsın
+	// eğer user'ın çekmiş olduğu kredi yoksa veya kredi başvurusu reddedilmişse : işleminizi gerçekleştiremiyoruz
+	// çekilmiş kredi varsa parametre olarak girdiğimiz miktar kadar ödeme yapmış olalım
+	// ve kredi borcundan düşülsün
+	// çıktı --> güncel kredi borcunuz ... TL
+	
+	// hesaptanKrediBorcunuOde(); metodunu yazalım
+	
+	// her kart borcumuzu ödediğimizde Account'un kredi puanı 10 artsın
+	
+	// Nakit avans çekeceğiz. çekmemiz için kredi notumuzun 50'den fazla olması gerekiyor
+	// eğer 50'den fazla ise hesaptaki paranın yarısı kadar nakit avans almış olacağız
+	// 50'den az ise kredi notunuz yetersizdir diyip kredi notunu bastırsın
+	
 		
   	
 	public static void main(String[] args) {
@@ -143,6 +160,38 @@ public class Main {
 		accountManager.accountDetails(sinem);
 		accountManager.accountDetails(account);
 		accountManager.accountDetails(account2);
+		
+		System.out.println("- - - - - - -");
+//		System.out.println("bakiye: " + account2.getMoney());
+//		userManager.krediBasvurusundaBulun(account2, 3000);
+//		adminManager.krediBasvurusunuOnayla(user2);
+//		accountManager.accountDetails(account2);
+//		
+//		userManager.krediBorcunuOde(account2, 100);
+//		userManager.krediBorcunuOde(account2, 500);
+//		userManager.krediBorcunuOde(account2, 5000);
+//		System.out.println("Kredi borcu: " + account2.getKrediBorcu());
+//		userManager.krediBorcunuOde(account2, 100);
+//		userManager.krediBorcunuOde(account2, 2300);
+//		System.out.println("Kredi borcu: " + account2.getKrediBorcu());
+		
+		System.out.println("- - - - - - -");
+		accountManager.accountDetails(account2);
+		userManager.krediBasvurusundaBulun(account2, 5000);
+		adminManager.krediBasvurusunuOnayla(user2);
+		accountManager.accountDetails(account2);
+		System.out.println("* * * *");
+		userManager.hesaptanKrediBorcunuOde(account2, 500);
+		userManager.hesaptanKrediBorcunuOde(account2, 300);
+		userManager.hesaptanKrediBorcunuOde(account2, 10);
+	//	userManager.hesaptanKrediBorcunuOde(account2, 6000);
+		userManager.hesaptanKrediBorcunuOde(account2, 20);
+		userManager.hesaptanKrediBorcunuOde(account2, 30);
+		
+		userManager.nakitAvansCek(account2);
+		
+		userManager.nakitAvansCek2(account2, 100);
+		
 		
 	}
 
