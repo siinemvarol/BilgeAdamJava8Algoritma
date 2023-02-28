@@ -1,0 +1,22 @@
+package lesson016.interfaceUygulama;
+
+import java.util.Scanner;
+
+public class Util {
+	
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static int intDegerAl(String sorgu) {
+		System.out.println(sorgu);
+		int deger = Integer.valueOf(scanner.nextLine());
+		return deger;
+	}
+	
+	public static String stringDegerAl(String sorgu) {
+		System.out.println(sorgu);
+		String deger = scanner.nextLine();
+		return deger;
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+package lesson016.interfaceUygulama;
+
+import java.util.Scanner;
+
+public class Util {
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	public int intDegerAl() {
+		int deger = Integer.valueOf(scanner.nextLine());
+		return deger;
+	}
+	
+	public void stringDegerAl() {
+		
+	}
+	
+
+}

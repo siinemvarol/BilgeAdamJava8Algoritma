@@ -1,0 +1,5 @@
+package lesson016.interfaceOrnek;
+
+public class Arac implements IHareket, IBinilebilir {
+
+}

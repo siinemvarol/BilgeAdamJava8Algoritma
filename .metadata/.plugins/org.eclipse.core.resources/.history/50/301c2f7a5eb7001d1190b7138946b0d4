@@ -1,0 +1,14 @@
+package lesson016.interfaceUygulama;
+
+public class Util {
+	
+	public void intDegerAl() {
+		
+	}
+	
+	public void stringDegerAl() {
+		
+	}
+	
+
+}

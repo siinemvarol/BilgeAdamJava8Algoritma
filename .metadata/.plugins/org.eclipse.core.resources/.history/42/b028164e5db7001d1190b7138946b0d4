@@ -1,0 +1,31 @@
+package lesson016.interfaceUygulama;
+
+public class Main {
+	
+	// Kütüphane uygulaması yapalım
+	// Kitap sınıfımız olsun
+	// isim, yazar, fiyat attributes
+	
+	// Kutuphane: isim, Kitaplar
+	
+	// IKutuphaneManaher diye bir interface oluşturalım
+	// interface'e kitapEkle() metodu yazalım
+	
+	// Util sınıfı oluşturalım
+	//
+	//
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Kitap kitap1 = new Kitap("Pal Sokağı Çocukları", "Ferenc Molnar", 53.91);
+		Kitap kitap2 = new Kitap("Fareler ve İnsanlar", "John Steinbeck", 42.90);
+		Kitap kitap3 = new Kitap("Şeker Portakalı", "Jose Mauro De Vasconcelos", 30.31);
+		Kitap kitap4 = new Kitap("Kırmızı Pazartesi", "Gabriel Garcia Marquez", 21.12);
+		Kitap kitap5 = new Kitap("Simyacı", "Paulo Coelho", 42.07);
+		Kitap kitap6 = new Kitap("Nietzsche Ağladığında", "Irvin D. Yalom", 97.99);
+		
+
+	}
+
+}

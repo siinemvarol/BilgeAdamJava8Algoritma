@@ -1,0 +1,19 @@
+package lesson016.interfaceUygulama;
+
+import java.util.List;
+
+public interface IKutuphaneManager {
+	
+	public void kitapEkle();
+	
+	public void kitaplariListele();
+	
+	public void yazarIsmineGoreArama();
+	
+	public void kitapSil();
+	
+	public void indirimYap();
+	
+	public Kitap kitapKontrolu(List<Kitap> kitapListesi);
+
+}

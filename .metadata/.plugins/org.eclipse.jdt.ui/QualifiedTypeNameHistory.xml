@@ -6,13 +6,15 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="lesson011.Product"/>
     <fullyQualifiedTypeName name="lesson011.helper.RandomGenerateID"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="homework2_24022023.Takim"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="homework1_24022023.Employee"/>
     <fullyQualifiedTypeName name="lesson015.veteriner.Kopek"/>
     <fullyQualifiedTypeName name="lesson015.veteriner.Kedi"/>
     <fullyQualifiedTypeName name="lesson015.veteriner.Musteri"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="lesson015.veteriner.Veteriner"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="lesson016.interfaceUygulama.Kitap"/>
 </qualifiedTypeNameHistroy>

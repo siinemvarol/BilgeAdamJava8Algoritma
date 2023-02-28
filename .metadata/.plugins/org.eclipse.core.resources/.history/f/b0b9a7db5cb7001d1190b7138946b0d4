@@ -1,0 +1,11 @@
+package lesson016.interfaceUygulama;
+
+public class Kitap {
+
+	private String isim;
+	private String yazar;
+	private double fiyat;
+
+
+
+}
