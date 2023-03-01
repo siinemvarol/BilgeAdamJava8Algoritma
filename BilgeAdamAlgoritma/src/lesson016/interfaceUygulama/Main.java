@@ -32,6 +32,10 @@ public class Main {
 	// kitapKontrolu metodu yazalım. kitap var mu yok mu bulur ve return eder
 	
 	// indirimde olanları gösteren metod 
+	
+	// kitabi güncelle metodunu yazalım ve ismini güncelleyelim
+	
+	// indirimde olan kitapları listeleyelim
 
 	static Kutuphane kutuphane = new Kutuphane("NY Library");
 
@@ -43,6 +47,8 @@ public class Main {
 			System.out.println("3 - Yazar İsmine Göre Kitap Arama");
 			System.out.println("4 - Kitap Sil");
 			System.out.println("5 - İndirim Yap");
+			System.out.println("6 - Kitap İsmini Güncelle");
+			System.out.println("7 - İndirimde Olan Kitapları Göster");
 	
 			int secim = Util.intDegerAl("Seçiminiz:");
 
@@ -61,6 +67,12 @@ public class Main {
 				break;
 			case 5:
 				kutuphane.indirimYap();
+				break;
+			case 6:
+				kutuphane.kitabiGuncelle();
+				break;
+			case 7:
+				kutuphane.indirimdeOlanlariGoster();
 				break;
 
 			default:

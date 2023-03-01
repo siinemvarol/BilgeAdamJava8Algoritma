@@ -1,6 +1,5 @@
 package lesson016.interfaceUygulama;
 
-
 public interface IKutuphaneManager {
 	
 	public void kitapEkle();
@@ -12,6 +11,10 @@ public interface IKutuphaneManager {
 	public void kitapSil();
 	
 	public void indirimYap();
+	
+	public void kitabiGuncelle();
+	
+	public void indirimdeOlanlariGoster();
 	
 
 }

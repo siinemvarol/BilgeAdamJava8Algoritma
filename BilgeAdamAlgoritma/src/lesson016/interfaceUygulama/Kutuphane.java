@@ -95,6 +95,7 @@ public class Kutuphane implements IKutuphaneManager {
 		Kitap kitap = kitapKontrolu(kitapIsmi);
 		if (kitap != null) {
 			kitap.setFiyat(kitap.getFiyat() - kitap.getFiyat() * indirimOrani * 0.01);
+			kitap.setIndirimdeMi(true);
 			System.out.println(kitap.getIsim() + " kitabına %" + indirimOrani + " indirim yapıldı. Güncel fiyat: "
 					+ kitap.getFiyat());
 		}
@@ -125,6 +126,29 @@ public class Kutuphane implements IKutuphaneManager {
 
 	}
 
+	@Override
+	public void kitabiGuncelle() {
+		String kitapKontrolu = Util.stringDegerAl("Güncelleme yapmak istediğiniz kitap ismini girin: ");
+		Kitap kitap = kitapKontrolu(kitapKontrolu);		
+		if (kitap != null) {
+			String kitapIsmi = Util.stringDegerAl("Güncellemek istediğiniz yeni ismi girin: ");
+			System.out.println(kitap.getIsim() + " kitabının ismi güncelleniyor...");
+			kitap.setIsim(kitapIsmi);
+			System.out.println(kitap.getIsim() + " olarak güncellendi.");
+		}
+
+	}
+	
+	@Override
+	public void indirimdeOlanlariGoster() {
+		for (Kitap kitap : kitapListesi) {
+			if (kitap.isIndirimdeMi()) {
+				System.out.println(kitap.getIsim() + " kitabı indirimdedir");
+			}
+		}
+		
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -136,5 +160,7 @@ public class Kutuphane implements IKutuphaneManager {
 	public List<Kitap> getKitapListesi() {
 		return kitapListesi;
 	}
+
+
 
 }

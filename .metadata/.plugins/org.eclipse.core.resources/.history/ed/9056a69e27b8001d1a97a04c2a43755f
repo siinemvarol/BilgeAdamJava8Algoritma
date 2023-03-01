@@ -1,0 +1,15 @@
+package lesson017;
+
+public class ArrayListOrnek {
+	
+	// Bir tane ArrayList oluşturalım
+	// içine manuel şehir atalım
+	// bu şehirlerden "an" ile başlayan varsa bu şehri "xxx" yapalım
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

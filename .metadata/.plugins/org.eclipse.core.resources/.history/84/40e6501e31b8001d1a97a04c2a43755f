@@ -1,0 +1,18 @@
+package lesson017;
+
+public class StackOrnek {
+	
+	// Stack : LIFO (Last In First Out)
+	
+	// stack oluşturalım, içine birkaç int değer atalım
+	// stacki yazdıralım
+	// stack boşalana kadar bütün elemanları çıkaralım
+	// çıkarılan her elemanı yazdıralım
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

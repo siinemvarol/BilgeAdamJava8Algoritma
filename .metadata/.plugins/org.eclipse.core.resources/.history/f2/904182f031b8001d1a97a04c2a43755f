@@ -1,0 +1,38 @@
+package lesson017;
+
+import java.util.Stack;
+
+public class StackOrnek {
+	
+	// Stack : LIFO (Last In First Out)
+	
+	// stack oluşturalım, içine birkaç int değer atalım
+	// stacki yazdıralım
+	// stack boşalana kadar bütün elemanları çıkaralım
+	// çıkarılan her elemanı yazdıralım
+
+	public static void main(String[] args) {
+		
+		Stack<Integer> sayilar = new Stack<Integer>();
+		
+		sayilar.push(5);
+		sayilar.push(1);
+		sayilar.push(9);
+		sayilar.push(4);
+		sayilar.push(26);
+		sayilar.push(17);
+		sayilar.push(13);
+		
+		for (Integer sayi : sayilar) {
+			System.out.println(sayi);
+		}
+		
+		for (int i = sayilar.size()-1; i >= 0; i--) {
+			System.out.println(sayilar.get(i) + " çıkarılıyor..");
+			sayilar.pop();
+		}
+		
+
+	}
+
+}

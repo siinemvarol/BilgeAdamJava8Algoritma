@@ -5,6 +5,7 @@ public class Kitap {
 	private String isim;
 	private String yazar;
 	private double fiyat;
+	private boolean indirimdeMi;
 
 	public Kitap(String isim, String yazar, double fiyat) {
 		super();
@@ -35,6 +36,14 @@ public class Kitap {
 
 	public void setFiyat(double fiyat) {
 		this.fiyat = fiyat;
+	}
+
+	public boolean isIndirimdeMi() {
+		return indirimdeMi;
+	}
+
+	public void setIndirimdeMi(boolean indirimdeMi) {
+		this.indirimdeMi = indirimdeMi;
 	}
 
 }

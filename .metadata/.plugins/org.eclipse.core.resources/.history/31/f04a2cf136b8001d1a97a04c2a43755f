@@ -1,0 +1,24 @@
+package lesson017;
+
+import java.util.Stack;
+
+public class StackOrnek2 {
+
+	// Parametre olarak String alan ve girilen metnin her bir karakterini stackin
+	// içine atan bir metod yazalım ismi palindrom olsun
+	
+	public static void palindrom(String metin) {
+		Stack<Character> stack = new Stack<Character>(); 
+		for (int i = 0; i < metin.length(); i++) {
+			stack.push(metin.charAt(i));
+		}
+		System.out.println(stack);
+	}
+
+	public static void main(String[] args) {
+		
+		palindrom("java");
+
+	}
+
+}
