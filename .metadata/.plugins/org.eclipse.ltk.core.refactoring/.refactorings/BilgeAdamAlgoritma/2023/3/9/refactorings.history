@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;o&apos; in &apos;lesson018.Musteri.compareTo(...)&apos; to &apos;musteri&apos;&#x0D;&#x0A;- Original project: &apos;BilgeAdamAlgoritma&apos;&#x0D;&#x0A;- Original element: &apos;lesson018.Musteri.compareTo(Musteri).o&apos;&#x0D;&#x0A;- Renamed element: &apos;o&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;o&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;lesson018{Musteri.java[Musteri~compareTo~QMusteri;@o!577!585!585!585!QMusteri;!0!true" name="musteri" references="true" stamp="1677763650996" version="1.0"/>
+</session>

@@ -1,0 +1,52 @@
+package lesson018;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class MapOrnek2 {
+
+	public static void main(String[] args) {
+		String[] ogrenci = { "Ayşe", "Ece", "Mahmut" };
+		int[] notlar = { 60, 80, 70 };
+
+		HashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+
+		for (int i = 0; i < ogrenci.length; i++) {
+			map.put(ogrenci[i], notlar[i]);
+		}
+
+		// 1. yazdırma alternatifi
+		System.out.println(map);
+
+		// 2. yazdırma alternatifi
+		for (Map.Entry<String, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + " " + entry.getValue());
+
+		}
+
+		// Her öğrencinin 3 notu olacak
+		// int[][] notlar2 = { { 50, 50, 60 }, { 80, 90, 70 }, { 25, 75, 80 } };
+		// bu notları ve öğrencileri Map'in içine atıp yazdıralım
+
+		int[][] notlar2 = { { 50, 50, 60 }, { 80, 90, 70 }, { 25, 75, 80 } };
+
+		HashMap<String, int[]> map2 = new LinkedHashMap<String, int[]>();
+
+		for (int i = 0; i < notlar2.length; i++) {
+
+			map2.put(ogrenci[i], notlar2[i]);
+
+		}
+
+		System.out.println("- - - - - ");
+		System.out.println(map2.get(map2));
+		System.out.println("- - - - - ");
+		for (Map.Entry<String, int[]> entry : map2.entrySet()) {
+			System.out.println(entry.getKey() + " " + entry.getValue());
+
+		}
+
+	}
+
+}

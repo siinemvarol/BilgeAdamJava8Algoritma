@@ -1,0 +1,16 @@
+package lesson018;
+
+public class MapOrnek {
+	
+	// character ve int tutan bir map oluşturalım
+	// kullanıcıdan birer kelime alalım
+	// ve girilen kelimede hangi harfte kaç tane var onu yazdıralım
+
+	public static void main(String[] args) {
+		
+		HashMap <Character, Integer> harita = new HashMap<Character, Integer>();
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package lesson018;
+
+public class SetOrnek {
+	
+	// 2 tane set oluşturalım: tekrar edenler ve tekrar etmeyenler
+	// kullanıcıdan bir kelime alalım 
+	// eğer tekrar eden harf varsa tekrarEdenler setine atalım
+	// ve tekrarEtmeyenlerden çıkaralım
+	
+	// tekrarEdenler ve tekrarEtmeyenler yazdıralım
+	
+	// java
+	// tekrarEdenler --> a
+	// tekrarEtmeyenler --> j, v
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

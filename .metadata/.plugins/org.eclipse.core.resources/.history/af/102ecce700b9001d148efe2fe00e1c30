@@ -1,0 +1,16 @@
+package lesson018;
+
+public class Hasta {
+	
+	// hasta diye bir sınıf açalım
+	// isim, şikayet ve öncelik attribute olsun
+	// şikayete göre öncelik belirleyeceğiz
+	// Öncelik Özellikleri:
+	// Apandist 
+	
+	private String isim;
+	private String sikayet;
+	private int oncelik;
+	
+
+}

@@ -1,0 +1,48 @@
+package lesson018;
+
+public class Hasta {
+
+	// hasta diye bir sınıf açalım
+	// isim, şikayet ve öncelik attribute olsun
+	// şikayete göre öncelik belirleyeceğiz
+	// Öncelik Özellikleri:
+	// Apandist -> en yüksek öncelik
+	// Yanık	-> orta öncelik
+	// Ağrı		-> en düşük öncelik
+
+	private String isim;
+	private String sikayet;
+	private int oncelik;
+
+	public Hasta(String isim, String sikayet) {
+		super();
+		this.isim = isim;
+		this.sikayet = sikayet;
+		// this.oncelik = oncelik;
+	}
+
+	public String getIsim() {
+		return isim;
+	}
+
+	public void setIsim(String isim) {
+		this.isim = isim;
+	}
+
+	public String getSikayet() {
+		return sikayet;
+	}
+
+	public void setSikayet(String sikayet) {
+		this.sikayet = sikayet;
+	}
+
+	public int getOncelik() {
+		return oncelik;
+	}
+
+	public void setOncelik(int oncelik) {
+		this.oncelik = oncelik;
+	}
+
+}

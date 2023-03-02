@@ -1,0 +1,24 @@
+package lesson018;
+
+public class Musteri {
+
+	private String isim;
+	private int yas;
+
+	public String getIsim() {
+		return isim;
+	}
+
+	public void setIsim(String isim) {
+		this.isim = isim;
+	}
+
+	public int getYas() {
+		return yas;
+	}
+
+	public void setYas(int yas) {
+		this.yas = yas;
+	}
+
+}

@@ -1,0 +1,19 @@
+package lesson018;
+
+public class QueueOrnek2 {
+	
+	// Bir tane queue oluşturalım 10-12 isim ekleyelim
+	// 1-10 arasında bir sayi üretelim - pide sayisi olsun
+	// pide yazdiralim
+	
+	// kuyruğa göre pide dağıralım. bittiğinde pideler bitti yazdıralım
+	// pideyi alan kişileri kuyruktan çıkaralım
+	// pideyi alamayan kişileri yazdıralım
+
+	public static void main(String[] args) {
+		
+		Queue<String> pideKuyrugu = new PriorityQueue<String>();
+
+	}
+
+}
