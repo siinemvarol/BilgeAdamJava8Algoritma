@@ -1,0 +1,9 @@
+package lesson018;
+
+public enum OncelikEnum {
+	
+	YUKSEK ("Apandist", 1),
+	ORTA ("Yanık", 2),
+	DUSUK ("Ağrı", 3)
+
+}

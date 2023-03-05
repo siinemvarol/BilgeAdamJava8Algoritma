@@ -22,6 +22,20 @@ public class AcilServis {
 		while (!acilServis.isEmpty()) {
 			System.out.println(acilServis.peek().getIsim() + " " + acilServis.poll().getOncelik());
 		}
+		
+		System.out.println("enum---");
+		Queue<Hasta> acilServis3 = new PriorityQueue<Hasta>();
+		
+		acilServis3.offer(new Hasta("Mustafa", ESikayet.APANDIST));
+		acilServis3.offer(new Hasta("Oguz", ESikayet.APANDIST));
+		acilServis3.offer(new Hasta("Kemal", ESikayet.AGRI));
+		acilServis3.offer(new Hasta("Ayşe", ESikayet.YANIK));
+		acilServis3.offer(new Hasta("Zeliha", ESikayet.YANIK));
+		acilServis3.offer(new Hasta("Okan", ESikayet.APANDIST));
+		acilServis3.offer(new Hasta("Orhan", ESikayet.YANIK));
+		acilServis3.offer(new Hasta("Merve", ESikayet.YANIK));
+		acilServis3.offer(new Hasta("Gizem", ESikayet.AGRI));
+		acilServis3.offer(new Hasta("Muharrem", ESikayet.APANDIST));
 
 	}
 

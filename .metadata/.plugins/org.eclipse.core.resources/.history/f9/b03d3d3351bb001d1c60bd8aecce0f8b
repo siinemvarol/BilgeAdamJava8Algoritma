@@ -1,0 +1,46 @@
+package homework_03032023;
+
+import java.util.Scanner;
+
+public class Main {
+
+//	"0- Çıkış \n" + 
+//	"1-- Televizyon Kur\n" +
+//	"2-- Televizyonu Aç\n" + 
+//	"3-- Sesini Artır\n" +
+//	"4--Sesi Azalt\n" +
+//	"5-- Kanal Değiştir\n" +
+//	"6-- Kanal Bilgisi Goster\n" +
+//	"7-- Televizyonu Kapat\n" +
+//	"8-- Menüyü Goster\n"
+
+
+	public static void tvKurVeKanallariOlustur() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("TV markasını girin: ");
+		String marka = scanner.nextLine();
+		System.out.println("TV boyutunu girin: ");
+		String boyut = scanner.nextLine();
+
+		Televizyon televizyon = new Televizyon(marka, boyut);
+
+	}
+	
+	public static void menu() {
+		System.out.println("0 - Çıkış");
+		System.out.println("1 - Televizyon Kur");
+		System.out.println("2 - Televizyonu Aç");
+		System.out.println("3 - Sesini Artır");
+		System.out.println("4 - Sesi Azalt"); 
+		System.out.println("5 - Kanal Değiştir");
+		System.out.println("6 - Kanal Bilgisi Göster");
+		System.out.println("7 - Televizyonu Kapat");
+		System.out.println("8 - Menüyü Göster"); 
+	}
+
+	public static void main(String[] args) {
+
+		tvKurVeKanallariOlustur();
+	}
+
+}

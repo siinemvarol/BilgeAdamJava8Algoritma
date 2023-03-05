@@ -1,0 +1,19 @@
+package lesson019;
+
+public class Main {
+	
+	// program bize random bir plaka sunacak
+	// hashMap olacrak tutacağız (plaka, şehir)
+	// oyunSayisi
+	// 3 hakkımız var her turda kalan hakkımızı göstersin
+	// tahminleri tutup göstermek için -> hashMap(oyunSayisi, List<String>
+	
+	// PlakaTahmin diye sinif oluşturalım
+	// mapOlustur diye metod yazalım
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package lesson018;
+
+public enum OncelikEnum {
+	
+	YUKSEK ("Apandist", 1),
+	ORTA ("Yanık", 2),
+	DUSUK ("Ağrı", 3);
+
+	private String sikayet;
+	private int oncelik;
+	
+
+	OncelikEnum(String sikayet, int oncelik) {
+		this.sikayet = sikayet;
+		oncelikBelirle(sikayet);
+	}
+
+}

@@ -1,0 +1,13 @@
+package lesson019;
+
+public class Main {
+	
+	// program bize random bir plaka sunacak
+	// hashMap olacrak tutacağız (plaka, şehir)
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

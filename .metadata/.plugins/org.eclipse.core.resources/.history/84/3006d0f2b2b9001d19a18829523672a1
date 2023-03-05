@@ -1,0 +1,26 @@
+package lesson018;
+
+public enum ESikayet {
+
+	APANDIST,
+	YANIK,
+	AGRI
+	
+	
+
+	private String sikayet;
+	
+
+	ESikayet(String sikayet) {
+		this.sikayet = sikayet;
+		
+
+	}
+
+	public String getSikayet() {
+		return sikayet;
+	}
+
+
+
+}

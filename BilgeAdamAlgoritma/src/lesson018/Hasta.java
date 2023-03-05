@@ -11,27 +11,58 @@ public class Hasta implements Comparable<Hasta> {
 	// Ağrı -> en düşük öncelik
 
 	private String isim;
-	private String sikayet;
+	private ESikayet sikayet;
+	private String sikayet2;
 	private int oncelik;
 
-	public Hasta(String isim, String sikayet) {
+	public Hasta(String isim, String sikayet2) {
+		super();
+		this.isim = isim;
+		this.sikayet2 = sikayet2;
+		oncelikBelirle(sikayet2);
+
+		this.oncelik = sikayet2.equalsIgnoreCase("Apandist") ? 1
+				: sikayet2.equalsIgnoreCase("Yanık") ? 2 
+				: sikayet2.equalsIgnoreCase("Ağrı") ? 3 : 4;
+	}
+
+	public Hasta(String isim, ESikayet sikayet) {
 		super();
 		this.isim = isim;
 		this.sikayet = sikayet;
-		oncelikBelirle(sikayet);
+		oncelikBelirleEnum(sikayet);
 
-		this.oncelik = sikayet.equalsIgnoreCase("Apandist") ? 1
-				: sikayet.equalsIgnoreCase("Yanık") ? 2 
-				: sikayet.equalsIgnoreCase("Ağrı") ? 3 : 4;
+//		this.oncelik = sikayet.equalsIgnoreCase("Apandist") ? 1
+//				: sikayet.equalsIgnoreCase("Yanık") ? 2 : sikayet.equalsIgnoreCase("Ağrı") ? 3 : 4;
 	}
 
-	public void oncelikBelirle(String sikayet) {
-		if (sikayet.equalsIgnoreCase("Apandist")) {
+	public void oncelikBelirle(String sikayet2) {
+		if (sikayet2.equalsIgnoreCase("Apandist")){
 			this.oncelik = 1;
-		} else if (sikayet.equalsIgnoreCase("Yanık")) {
+		} else if (sikayet2.equalsIgnoreCase("Yanık")){
 			this.oncelik = 2;
-		} else {
+		}
+		else {
 			this.oncelik = 3;
+		}
+	}
+
+	public void oncelikBelirleEnum(ESikayet sikayet) {
+		
+		switch (sikayet) {
+		case APANDIST:
+			this.oncelik = 1;
+			break;
+		case YANIK:
+			this.oncelik = 2;
+			break;
+		case AGRI:
+			this.oncelik = 3;
+			break;
+
+		default:
+			throw new IllegalArgumentException("beklenmedik değer girişi oldu hatası");
+			
 		}
 	}
 
@@ -44,11 +75,11 @@ public class Hasta implements Comparable<Hasta> {
 	}
 
 	public String getSikayet() {
-		return sikayet;
+		return sikayet2;
 	}
 
-	public void setSikayet(String sikayet) {
-		this.sikayet = sikayet;
+	public void setSikayet(String sikayet2) {
+		this.sikayet2 = sikayet2;
 	}
 
 	public int getOncelik() {

@@ -1,0 +1,7 @@
+package homework_03032023;
+
+public class MuzikKanali extends Kanal{
+	
+	private EHaberTuru haberTuru;
+
+}

@@ -1,0 +1,7 @@
+package homework_03032023;
+
+public class HaberKanali extends Kanal{
+	
+	private String haberTuru;
+
+}
