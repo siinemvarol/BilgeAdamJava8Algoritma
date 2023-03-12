@@ -1,0 +1,14 @@
+package lesson023.service;
+
+import lesson023.entity.data.User;
+import lesson023.entity.database.DataBase;
+
+public class AdminManager {
+	
+	public void getAll() {
+		for (User user: DataBase.getUserList())
+		System.out.println(user);
+		
+	}
+
+}

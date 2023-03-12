@@ -1,0 +1,29 @@
+package lesson020;
+
+public class TryCatchOrnek2 {
+	
+	public static void elemaniGetir(String[] array, int deger) {
+		String arananEleman = "";
+		try {
+			for (int i = 0; i < array.length; i++) {
+				if (i == deger) {
+					arananEleman = array[i];
+				}
+			}
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+			System.out.println("Array sınırları dışına çıkılamaz");
+		}
+	}
+
+	public static void main(String[] args) {
+
+		String[] array = { "6", "10", "bc", null, "20" };
+
+		// elemaniGetir(array);
+		// Parametre olarak array alan ve girdiğimiz değere karşılık gelen indexi
+		// getiren bir metod yazalım
+
+	}
+
+}

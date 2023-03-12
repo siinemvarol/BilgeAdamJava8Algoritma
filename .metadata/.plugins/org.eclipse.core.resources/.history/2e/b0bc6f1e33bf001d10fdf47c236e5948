@@ -1,0 +1,39 @@
+package lesson023.service;
+
+import lesson023.entity.data.User;
+import lesson023.entity.database.DataBase;
+
+public class UserManager {
+	
+	DataBase dataBase;
+	
+	public UserManager() {
+		dataBase = new DataBase();
+	}
+	
+	// kullanıcının girdiği mail bizim database'imizde var mı yok mu
+	// eğer varsa o User'ı return edelim
+
+	public User userMailKontrol (String mail) {
+			
+		for (int i = 0; i < DataBase.getUserList().size(); i++) {
+			if (DataBase.getUserList().get(i).getEmail().equalsIgnoreCase(mail)) {
+				return DataBase.getUserList().get(i);
+			}
+		}
+		System.out.println("User bulunamadı");
+		return null;
+	}
+	
+	public boolean userSifreKontrol (String password) {
+		
+		for (int i = 0; i < DataBase.getUserList().size(); i++) {
+			if (DataBase.getUserList().get(i).getPassword().equals(password)) {
+				return true;
+			}
+		}
+		System.out.println("Şifre yanlış");
+		return false;
+	}
+
+}

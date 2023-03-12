@@ -1,0 +1,9 @@
+package lesson021;
+
+public class Yuk {
+	
+	private String ismi;
+	private double agirlik;
+	private LocalDate kabulTarihi;
+
+}

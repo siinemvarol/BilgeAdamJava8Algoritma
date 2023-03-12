@@ -1,0 +1,48 @@
+package lesson022;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Kisi kisi1 = new Kisi("ahmet", 51, ECinsiyet.ERKEK);
+		Kisi kisi2 = new Kisi("ali", 71, ECinsiyet.ERKEK);
+		Kisi kisi3 = new Kisi("zeynep", 50, ECinsiyet.KADIN);
+		Kisi kisi4 = new Kisi("defne", 49, ECinsiyet.KADIN);
+		Kisi kisi5 = new Kisi("aslı", 65, ECinsiyet.KADIN);
+		
+		List<Kisi> kisiler = new ArrayList<>();
+		
+		kisiler.add(kisi1);
+		kisiler.add(kisi2);
+		kisiler.add(kisi3);
+		kisiler.add(kisi4);
+		kisiler.add(kisi5);
+		
+		// Kadın olanları farklı bir listeye atalım 
+		System.out.println("- - - Kadınlar - - - \n");
+		List<Kisi> kadinlar = kisiler.stream().filter(kisi -> kisi.getCinsiyet().equals(ECinsiyet.KADIN)).collect(Collectors.toList());
+		System.out.println(kadinlar);
+		
+		// Kişileri yaşlarına göre sıralayıp bir listeye atalım 
+		System.out.println("\n- - - Küçükten Büyüğe - - - \n");
+		List<Kisi> kucuktenBuyuge = kisiler.stream().sorted(Comparator.comparing(Kisi::getAge)).collect(Collectors.toList());
+		System.out.println(kucuktenBuyuge);
+		
+		// Kişileri yaşlarına göre sıralayıp bir listeye atalım 
+		System.out.println("\n- - - Küçükten Büyüğe 2 - - - \n");
+		List<Kisi> kucuktenBuyuge2 = kisiler.stream().sorted(Comparator.comparingInt(Kisi::getAge)).collect(Collectors.toList());
+		kucuktenBuyuge2.forEach(System.out::println);
+		
+		// Yukarıdakinin alternatifi
+		System.out.println("\n- - - Küçükten Büyüğe 3 - - - \n");
+		Collections.sort(kisiler, Comparator.comparing(Kisi::getAge));		//mevcut kisiler arrayinin yerini değiştiriyor
+		System.out.println(kisiler);
+	}
+
+}

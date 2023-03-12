@@ -1,0 +1,41 @@
+package lesson020;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class TryCatchOrnek2 {
+	
+	public static void elemaniGetir(String[] array, int deger) {
+		int index = 0;
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			System.out.println("Indexi girin: ");
+			index = scanner.nextInt();
+			System.out.println(array[index]);
+			for (int i = 0; i < array.length; i++) {
+				if (i == deger) {
+					arananEleman = array[i];
+				}
+			}
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+			System.out.println("Array sınırları dışına çıkılamaz");
+		} catch (InputMismatchException e) {
+			e.printStackTrace();
+			System.out.println("Lütfen int değer girin");
+		}
+		
+	}
+
+	public static void main(String[] args) {
+
+		String[] array = { "6", "10", "bc", null, "20" };
+
+		// elemaniGetir(array);
+		// Parametre olarak array alan ve girdiğimiz değere karşılık gelen indexi
+		// getiren bir metod yazalım
+
+	}
+
+}

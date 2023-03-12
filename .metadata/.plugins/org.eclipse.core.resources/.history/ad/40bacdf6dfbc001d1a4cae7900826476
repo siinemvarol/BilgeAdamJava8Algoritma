@@ -1,0 +1,32 @@
+package lesson021;
+
+public enum EErrorType {
+	
+	OUT_OF_BOUNDS ("Sınırların dışında yük verildi", 1),
+	SEAT_ALREADY_OCCPUIED ("Seçilen yer dolu", 2);
+
+	
+	private String message;
+	private int code;
+	
+	private EErrorType() {
+		
+	}
+	
+	
+	private EErrorType(String message, int code) {
+		this.message = message;
+		this.code = code;
+	}
+
+
+	public String getMessage() {
+		return message;
+	}
+
+	public int getCode() {
+		return code;
+	}
+	
+
+}

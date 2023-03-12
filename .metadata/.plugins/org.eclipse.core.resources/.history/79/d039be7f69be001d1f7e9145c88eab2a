@@ -1,0 +1,16 @@
+package lesson022.StreamUygulama;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		System.out.println(EUrun.values());
+//		
+//		for (EUrun string : EUrun.values()) {
+//			System.out.println(string);
+//		}
+		
+		
+
+	}
+
+}

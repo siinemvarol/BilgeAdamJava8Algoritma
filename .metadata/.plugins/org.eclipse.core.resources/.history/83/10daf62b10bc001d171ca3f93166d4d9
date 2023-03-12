@@ -1,0 +1,38 @@
+package lesson020;
+
+import java.util.Scanner;
+
+public class TryCatchOrnek {
+	
+	// bir tane bölme metodu yazalım kullanıcıdan 2 tane sayı alacağız
+	// bölümü return edeceğiz. yaparken gerekli hatalara karşı önlem alalım
+	
+	// kullanıcı doğru girdi girene kadar kullanıcıdan girdi alalım
+	
+	public static void bolme() {
+		boolean condition = true;
+		double bolum = 0;
+		do {
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("Bölünen sayıyı girin: ");
+			double bolunen = scanner.nextDouble();
+			System.out.println("Bölen sayıyı girin: ");
+			double bolen = scanner.nextDouble();
+			try {
+				bolum = bolunen / bolen;
+				condition = false;
+				System.out.println("Bölüm: " + bolum);
+			} catch (ArithmeticException e) {
+				e.printStackTrace();
+				System.out.println("Arithmetic exception");
+			}
+			
+		} while (condition);
+		
+	}
+	
+	public static void main(String[] args) {
+		bolme();
+	}
+
+}

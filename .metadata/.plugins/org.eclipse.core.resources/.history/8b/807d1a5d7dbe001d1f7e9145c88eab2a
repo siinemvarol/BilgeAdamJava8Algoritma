@@ -1,0 +1,66 @@
+package lesson023.util;
+
+import lesson023.entity.data.User;
+
+public class Menu {
+	
+	public void menu() {
+		System.out.println("1 - Admin Menu");
+		System.out.println("2 - User İşlemleri");
+		System.out.println("3 - Kayıt Ol");
+		int key = Util.intDegerAl("Yapmak istediğiniz işlem: ");
+		
+		switch (key) {
+		case 1:
+			adminMenu();
+			break;
+		case 2:
+			userLogin();
+			break;
+
+		default:
+			break;
+		}
+	}
+	
+	private void adminMenu() {
+		System.out.println("1 - Tüm kullanıcıları listele");
+		System.out.println("2 - Ana menüye dön");
+		int key = Util.intDegerAl("Yapmak istediğiniz işlem: ");
+		switch (key) {
+		case 1:
+			System.out.println("Kullanıcılar listelendi..");
+			break;
+		case 2:
+			menu();		// bu satırı yazdırmasam da olur
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+	
+	private void userLogin() {
+		String mail = Util.stringDegerAl("Mail: ");
+		String password = Util.stringDegerAl("Password: ");
+		
+		User user = new User(mail, password);
+		userMenu(user);
+	}
+	
+	private void userMenu(User user) {
+		System.out.println("DM at");
+		int key = Util.intDegerAl("Yapmak istediğiniz işlem: ");
+		switch (key) {
+		case 1:
+			System.out.println("DM atıldı..." + user.getEmail());
+			break;
+		case 2:
+			break;
+		default:
+			break;
+		}
+	}
+
+}

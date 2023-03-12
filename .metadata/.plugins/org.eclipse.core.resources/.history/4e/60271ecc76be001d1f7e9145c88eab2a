@@ -1,0 +1,18 @@
+package lesson023.entity.database;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lesson023.entity.data.User;
+
+public class DataBase {
+	
+	private static List<User> userList = new ArrayList<>();
+	
+	public DataBase() {
+		
+	}
+	
+	
+
+}

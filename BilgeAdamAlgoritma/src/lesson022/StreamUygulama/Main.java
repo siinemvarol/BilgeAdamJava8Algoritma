@@ -1,0 +1,26 @@
+package lesson022.StreamUygulama;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		System.out.println(EUrun.values());
+//		
+//		for (EUrun string : EUrun.values()) {
+//			System.out.println(string);
+//		}
+		
+		Market market = new Market();
+		market.urunleriListele();
+		market.fiyatListesiYazdir();
+		market.fiyati50denBuyukOlanlar();
+		market.fiyati50denBuyukOlanlar2();
+		market.ortalama();
+		market.ortalama2();
+		market.sepeteUrunEkle();
+		market.sepeteUrunEkle();
+		market.sepeteUrunEkle();
+		market.sepetiGoster();
+
+	}
+
+}

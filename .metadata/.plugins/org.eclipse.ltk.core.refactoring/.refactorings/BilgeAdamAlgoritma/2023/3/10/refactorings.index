@@ -1,2 +1,11 @@
 1678029109842	Encapsulate field 'ses'
 1678034709083	Encapsulate field 'acikKanalNo'
+1678108881865	Delete element
+1678110018451	Copy compilation unit
+1678190066308	Delete element
+1678191812310	Copy compilation unit
+1678283166618	Rename type 'Sepet'
+1678366823805	Copy compilation unit
+1678369612870	Rename method 'userKontrol'
+1678448916578	Rename method 'butunKullanicilariListele'
+1678454878870	Encapsulate field 'mesajlar'

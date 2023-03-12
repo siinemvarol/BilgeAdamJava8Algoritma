@@ -1,0 +1,25 @@
+package lesson020;
+
+import java.util.Scanner;
+
+public class TryCatchOrnek {
+	
+	// bir tane bölme metodu yazalım kullanıcıdan 2 tane sayı alacağız
+	// bölümü return edeceğiz. yaparken gerekli hatalara karşı önlem alalım
+	
+	// kullanıcı doğru girdi girene kadar kullanıcıdan girdi alalım
+	
+	public static void bolme() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bölünen sayıyı girin: ");
+		double bolunen = scanner.nextDouble();
+		System.out.println("Bölen sayıyı girin: ");
+		
+		double bolen = scanner.nextDouble();
+	}
+	
+	public static void main(String[] args) {
+		bolme();
+	}
+
+}

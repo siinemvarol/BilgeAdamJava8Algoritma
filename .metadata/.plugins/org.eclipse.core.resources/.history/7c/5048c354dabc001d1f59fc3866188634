@@ -1,0 +1,112 @@
+package lesson021;
+
+import java.util.Scanner;
+
+public class Uygulama {
+
+	// 1 - bir yuk yeri seçme metodumuz olsun
+	// bu metod limandaki yükler arrayinden bir yer belirlesin kendine
+	// eğer mevcut sınırdan fazla ise hata fırlatalım
+	
+	// 2 - Kendi exception sınıfımızı yaratalım
+	// LimanAppException, seçtiğimiz yer null değilse hata fırlatacağız
+	// kendi yazdığımız exception sınıfını throw edeceğiz
+
+	static Scanner scanner = new Scanner(System.in);
+
+	public static void yukYeriSec(Liman liman, Yuk yuk) {
+		System.out.println("yükü koymak istediğiniz yerin numarasını girin: ");
+		int yerNo = scanner.nextInt();
+
+		for (int i = 0; i < liman.getYukler().length; i++) {
+
+			if (yerNo == i) {
+				try {
+					liman.getYukler()[i] = yuk;
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+
+			}
+
+		}
+	}
+
+	// ---------------------------------------------------------------------------------
+
+	Liman liman;
+
+	public Uygulama() {
+		this.liman = new Liman();
+	}
+
+	public void yukYeriSec2() {
+		System.out.println("yükü koymak istediğiniz yerin numarasını girin: ");
+		int index = scanner.nextInt();
+
+		try {
+			Yuk yuk = liman.getYukler()[index];
+		} catch (Exception e) {
+			System.out.println("Lütfen sınırlar dahilinde bir yer seçin");
+		}
+
+	}
+
+	// 0 ile yükler arrayi uzunluğu arasında bir yer seçmek için override edelim
+	// int değer dönsün index
+	public int yukYeriSec3() {
+		System.out.println("yükü koymak istediğiniz yerin numarasını girin: ");
+		int index = scanner.nextInt();
+		if (index < 0 || index >= liman.getYukler().length) {
+			throw new IndexOutOfBoundsException("Lütfen aralıkta bir değer girin");
+		}
+		return index;
+
+	}
+	
+	/// ------------------------------------------------------------------
+	
+	public int yukYeriSec4() throws LimanAppException {
+		System.out.println("yükü koymak istediğiniz yerin numarasını girin: ");
+		int index = scanner.nextInt();
+		if (index < 0 || index >= liman.getYukler().length) {
+			throw new IndexOutOfBoundsException("Lütfen aralıkta bir değer girin");
+		}
+		if (liman.getYukler()[index] != null) {
+			throw new LimanAppException("Yükü koymak istediğiniz yer dolu!");
+		}
+		
+		
+		return index;
+
+	}
+		
+
+	public static void main(String[] args) {
+		
+		Uygulama uygulama = new Uygulama();
+		
+//		try {
+//			uygulama.yukYeriSec3();
+//		} catch (IndexOutOfBoundsException e) {
+//			e.printStackTrace();
+//			System.out.println(e.getMessage());
+//		}
+		
+		// ------------------------------------------
+		
+		try {
+			uygulama.yukYeriSec3();
+		} catch (IndexOutOfBoundsException e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		
+		
+		
+		System.out.println("\nmain son satır çalışıyor mu");
+
+	}
+
+}

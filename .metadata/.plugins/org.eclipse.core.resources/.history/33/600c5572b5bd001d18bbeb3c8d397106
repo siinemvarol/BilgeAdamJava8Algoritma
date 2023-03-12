@@ -1,0 +1,19 @@
+package lesson022.StreamUygulama;
+
+public enum EUrun {
+	
+	
+	Cips(20),
+	Kola(15);
+	
+	
+	double fiyat;
+
+	private EUrun(double fiyat) {
+		this.fiyat = fiyat;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package lesson023.entity.data;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import lesson023.entity.enums.EStatus;
+
+public class User extends Person {
+	
+	private String name;
+	private LocalDate birthDay;
+	private List<User> following;
+	private String activateCode;
+	private EStatus eStatus;
+	private HashMap<User, String> dmListesi;
+
+	public User(String id, String email, String password) {
+		super(id, email, password);
+	}
+
+}

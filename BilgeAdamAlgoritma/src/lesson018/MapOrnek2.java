@@ -5,14 +5,15 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class MapOrnek2 {
 
 	public static void main(String[] args) {
-		String[] ogrenci = { "Ayşe", "Ece", "Mahmut" };
+		String[] ogrenci = { "Ayşe", "Zeynep", "Mahmut" };
 		int[] notlar = { 60, 80, 70 };
 
-		HashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+		HashMap<String, Integer> map = new HashMap<>();
 
 		for (int i = 0; i < ogrenci.length; i++) {
 			map.put(ogrenci[i], notlar[i]);
@@ -22,7 +23,7 @@ public class MapOrnek2 {
 		System.out.println(map);
 
 		// 2. yazdırma alternatifi
-		for (Map.Entry<String, Integer> entry : map.entrySet()) {
+		for (Entry<String, Integer> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + " " + entry.getValue());
 
 		}
@@ -76,7 +77,7 @@ public class MapOrnek2 {
 		System.out.println(map3);
 		
 		// alternatif yazdırma -2
-		for (Map.Entry<String, List<Integer>> entry : map3.entrySet()) {
+		for (Entry<String, List<Integer>> entry : map3.entrySet()) {
 			System.out.println("\n" + entry.getKey() + " " + entry.getValue());
 			
 		}

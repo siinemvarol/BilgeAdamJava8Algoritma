@@ -1,0 +1,38 @@
+package lesson020;
+
+import java.util.Scanner;
+
+public class Util {
+
+	static Scanner scanner = new Scanner(System.in);
+
+	public static int intDegerAl(String sorgu) {
+		System.out.println(sorgu);
+		boolean kontrol = false;
+		int deger = 0;
+		do {
+			try {
+				deger = Integer.parseInt(scanner.nextLine());
+			} catch (Exception e) {
+				System.out.println("Lütfen bir rakam değeri giriniz");
+				kontrol = true;
+			}
+			
+			
+			
+		} while (kontrol);
+
+		return deger;
+	}
+
+	public static String stringDegerAl(String sorgu) {
+		System.out.println(sorgu);
+		String deger = scanner.nextLine();
+		return deger;
+	}
+
+	// how to convert string to localDate
+	// kullanıcıdan String olarak tarih alacağız (yıl-ay-gün) aldığımız değerleri
+	// localDate'e çevireceğiz. yanlış formatta hata fırlatalım
+
+}

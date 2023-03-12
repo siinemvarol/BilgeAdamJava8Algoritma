@@ -1,0 +1,5 @@
+package lesson022.StreamUygulama;
+
+public enum EUrun {
+
+}

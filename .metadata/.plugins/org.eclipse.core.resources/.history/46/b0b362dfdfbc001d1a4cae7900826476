@@ -1,0 +1,18 @@
+package lesson021;
+
+public enum EErrorType {
+	
+	OUT_OF_BOUNDS (1, "Sınırların dışında yük verildi"),
+	NULL_POINTER (2, "Seçilen yer dolu");
+
+	EErrorType(int code, String message) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private String message;
+	private int code;
+	
+	
+	
+
+}

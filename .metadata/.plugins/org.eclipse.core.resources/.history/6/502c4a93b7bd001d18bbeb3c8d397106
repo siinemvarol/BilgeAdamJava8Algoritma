@@ -1,0 +1,15 @@
+package lesson022.StreamUygulama;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Sepet {
+	
+	EUrun[] product = EUrun.values(); 
+	List<Urun> urunler = new ArrayList<>();
+//	Map<String, Integer> sepetMap = new HashMap<>();	// 
+	Map<String, Double> urunMap = new HashMap<> ();
+
+}

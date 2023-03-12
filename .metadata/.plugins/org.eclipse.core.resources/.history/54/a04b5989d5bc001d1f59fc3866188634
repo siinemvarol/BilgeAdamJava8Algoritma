@@ -1,0 +1,7 @@
+package lesson021;
+
+public class Liman {
+	
+	private Yuk[] yukler;
+
+}

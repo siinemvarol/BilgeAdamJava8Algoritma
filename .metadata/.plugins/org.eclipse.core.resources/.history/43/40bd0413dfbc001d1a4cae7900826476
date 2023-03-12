@@ -1,0 +1,9 @@
+package homework_03032023;
+
+protected enum EHaberTuru {
+	
+	BORSA,
+	SPOR,
+	MAGAZIN
+
+}

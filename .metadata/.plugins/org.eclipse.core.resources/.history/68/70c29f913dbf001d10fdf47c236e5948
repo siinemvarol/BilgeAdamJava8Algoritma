@@ -1,0 +1,36 @@
+package lesson023.service;
+
+import lesson023.entity.data.User;
+import lesson023.entity.database.DataBase;
+import lesson023.entity.enums.EStatus;
+import lesson023.util.Util;
+
+public class AdminManager {
+	
+	public void getAll() {
+		for (User user: DataBase.getUserList())
+		System.out.println(user);
+	}
+	
+	// yukarıdaki metodun Stream API kullanılmış şekli
+	public void getAll2() {
+	DataBase.getUserList().stream().forEach(user -> System.out.println(user.toString()));
+	}
+	
+	public boolean userIdKontrol(String id) {
+		
+		for (int i = 0; i < DataBase.getUserList().size(); i++) {
+			if (DataBase.getUserList().get(i).getPassword().equals(id)) {
+				return true;
+			}
+		}
+		System.out.println("Şifre yanlış");
+		return false;
+	}
+	
+	public void setActive() {
+		String id = Util.stringDegerAl("Aktif etmek istediğiniz kullanıcının id'sini girin: ");
+		userIdKontrol(id);
+	}
+
+}
