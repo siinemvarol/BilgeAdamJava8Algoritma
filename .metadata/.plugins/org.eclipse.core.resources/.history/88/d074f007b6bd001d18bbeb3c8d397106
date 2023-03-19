@@ -1,7 +1,0 @@
-package lesson022.StreamUygulama;
-
-public class Sepet {
-	
-	private EUrun[] product; 
-
-}

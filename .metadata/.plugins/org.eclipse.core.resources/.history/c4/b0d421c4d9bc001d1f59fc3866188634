@@ -1,7 +1,0 @@
-package lesson021;
-
-public class LimanAppException extends Exception{
-	
-	
-
-}

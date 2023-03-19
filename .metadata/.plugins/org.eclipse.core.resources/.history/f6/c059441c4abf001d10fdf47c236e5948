@@ -1,8 +1,0 @@
-package lesson023.entity.data;
-
-public class Post {
-	
-	private LocalDate date;
-	private String image;
-
-}

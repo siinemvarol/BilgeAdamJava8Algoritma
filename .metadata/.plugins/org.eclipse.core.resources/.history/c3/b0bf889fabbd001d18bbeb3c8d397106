@@ -1,9 +1,0 @@
-package lesson022;
-
-public class Kisi {
-	
-	private String name;
-	private int age;
-	private ECinsiyet cinsiyet;
-
-}

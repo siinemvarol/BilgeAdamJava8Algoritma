@@ -1,9 +1,0 @@
-package lesson023.service;
-
-public class AdminManager {
-	
-	public void butunKullanicilariListele() {
-		
-	}
-
-}

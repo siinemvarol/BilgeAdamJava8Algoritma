@@ -1,8 +1,0 @@
-package lesson022.StreamUygulama;
-
-public class Urun {
-	
-	private String name;
-	private double price;
-
-}
